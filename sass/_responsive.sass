@@ -56,65 +56,31 @@
 			background: #050f1e
 			> ul > li
 				width: 100%
-			ul
-				> li
-					a::before, a::after
-						display: none !important
-				li
-					&.active a
-						background: #438bca
-						color: #fff !important
-					&:hover a
-						color: #fff !important
-						background: rgba(0, 0, 0, 0.33)
-					&.active:hover a
-						color: #fff !important
-		&.header-bg .nav-menu ul > li > a
-			color: #fff !important
-		.nav-menu
-			> ul > li
 				&:first-child
 					margin-top: 0
 				&:last-child
 					margin-top: 10px
 					margin-bottom: 10px
-			ul
-				li a
+				a
 					padding: 10px 15px
 					color: #fff
-				> li > .quote
-					width: auto
-					float: left
-					margin: 10px 0 15px 10px
-			.drop
-				.dropdown
-					visibility: visible
-					position: relative
-					top: 0
-					opacity: 1
-					filter: Alpha(Opacity = 1)
-					width: 100%
-					margin: 0
-					border-top: none
-					background: rgba(255, 255, 255, 0.1)
-				&:hover .dropdown
-					margin-top: 0
-				.dropdown li a
-					color: inherit
-					padding: 10px 15px
-					background-color: transparent
-					border-bottom: none
-					padding-left: 15px
-			li.active .dropdown li a
-				color: inherit
-			.drop .dropdown li
+					&::before, &::after
+						display: none !important
 				&:hover a
-					background: #050f1e
-					padding-left: 25px
-					color: #438bca !important
-				&.active a
-					background: #438bca
-					color: #fff
+					color: #fff !important
+					background: rgba(0, 0, 0, 0.33)
+				&.active 
+					a
+						background: #438bca
+						color: #fff !important
+					&:hover a
+						color: #fff !important
+		&.header-bg .nav-menu ul > li
+			> a
+				color: #fff !important
+			&.active 
+				> a
+					color: #fff !important
 
 @media (max-width: 1200px)
 	.service .service-text
