@@ -39,8 +39,8 @@
 					<object type="image/svg+xml" data="images/light-logo.svg"></object>
 				</a>
 			</div>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu"><i class="ti-menu"></i></button>
-			<div id="nav-menu" class="nav-menu collapse">
+			<button class="navbar-toggle"><i class="ti-menu"></i></button>
+			<div id="nav-menu" class="nav-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li class="active"><a href="about.html">About</a></li>
@@ -90,7 +90,9 @@
 		   <div class="container">
 			  <div class="row">
 				  <div class="col-md-4 col-md-offset-2">
-					   <div class="text-center" style="margin-top:-200px"><img src="images/dr-ali.png" alt="" width="500"></div>
+					<div class="text-center" style="margin-top: -150px">
+						<img src="images/dr-ali.png" alt="" width="500" data-enllax-ratio="-.05" data-enllax-type="foreground">
+					</div>
 				  </div>
 				 <div class="col-md-4">
 					<div class="header-title" data-animation="fadeInUp" data-animation-delay="1">
@@ -108,7 +110,8 @@
 		   </div>
 		</section>
 
-		<section id="objectives" class="section dark-section blue-dark" style="background-image: url(images/bg-blue.jpg)">
+		<section id="objectives" class="section section-2 dark-section" data-parallax="scroll" data-image-src="images/bg-blue.png">
+		   <img src="images/patt.png" alt="" class="img" data-enllax-ratio="-.1" data-enllax-type="foreground">
 		   <div class="container">
 			  <div class="row">
 				 <div class="col-md-9 center-col">
@@ -261,6 +264,7 @@
 	<script type="text/javascript" src="js/jquery.appear.js"></script>
 	<script type="text/javascript" src="js/jquery.downcount.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.enllax.min.js"></script>
 	<script type="text/javascript" src="js/parallax.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

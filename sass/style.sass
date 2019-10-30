@@ -188,6 +188,36 @@ input[type="submit"]
 		z-index: 36
 		position: relative
 
+.section-1
+	overflow: hidden
+	.img 
+		position: absolute
+		width: 1500px
+		top: 2900px
+		left: 87%
+
+.section-2
+	overflow: hidden
+	.img 
+		position: absolute
+		width: 484px
+		top: 50%
+		margin-top: -265px
+		left: 0
+		opacity: .5
+		max-width: 50%
+
+.section-3
+	position: relative
+	overflow: hidden
+	.img 
+		position: absolute
+		width: 1500px
+		bottom: -3000px
+		left: 0
+		right: 0
+		margin: 0 auto
+
 .dark-section
 	color: #fff
 	h1, h2, h3, h4, h5, h6, p
@@ -239,6 +269,8 @@ input[type="submit"]
 		text-transform: uppercase
 	.btn-sys
 		margin: 20px 0 0
+		&:hover 
+			color: #fff
 	h1
 		text-transform: capitalize
 		font-weight: 600
@@ -302,6 +334,7 @@ input[type="submit"]
 	background-repeat: no-repeat
 	background-size: cover !important
 	overflow: hidden
+	border-bottom: 0
 	.container
 		z-index: 36
 		position: relative
@@ -435,10 +468,15 @@ input[type="submit"]
 		border: none
 		border-radius: 0
 		i
+			display: inline-block
 			position: relative
 			top: 2px
 			font-size: 16px
 			color: #fff !important
+			transition: all .4s ease-in-out
+		&.active 
+			i 
+				transform: rotate(90deg)
 	#logo
 		float: left
 		a
@@ -1294,9 +1332,19 @@ ul.nav-tabs
 		top: 10%
 		left: -29%
 		line-height: 16px
-	&:hover i
-		top: 20%
-		left: -20%
+		animation: scroll 2s infinite
+	&:hover 
+		i
+			top: 20%
+			left: -20%
+			animation: inherit
+
+@keyframes scroll
+	0%
+		opacity: 1
+	100%
+		opacity: 0
+		transform: rotate(-45deg) translateY(20px)
 
 .clock-countdown
 	bottom: 0
@@ -1494,11 +1542,16 @@ ul.nav-tabs
 		height: 30px
 		line-height: 32px
 		display: block
+		animation: scroll3 4s infinite
 	.tab-content
 		width: 90%
 		margin: 0 auto
 	.tab-pane
 		padding: 0
+
+@keyframes scroll3
+	50%
+		transform: translateY(5px)
 
 .member-box
 	margin: 0
@@ -1815,9 +1868,19 @@ ul.nav-tabs
 		top: 10%
 		left: -29.5%
 		line-height: 16px
-	&:hover i
-		top: 20%
-		left: -20%
+		animation: scroll2 4s infinite
+	&:hover 
+		i
+			top: 20%
+			left: -20%
+			animation: inherit
+
+@keyframes scroll2
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+		transform: rotate(-45deg) translateY(20px)
 
 .collapse-group .collapse-heading h4 a
 	color: #e72732
@@ -1952,12 +2015,19 @@ ul.nav-tabs
 	img
 		max-height: 36px
 		transform: rotate(-45deg)
+		animation: sign 4s infinite linear
 	i
 		display: block
 		color: #000
 		line-height: 80px
 		font-size: 20px
 		color: #e72732
+
+@keyframes sign
+	0%
+		transform: rotate(-45deg)
+	50%
+		transform: rotate(-45deg) scale(1.1, 1.1)
 
 .team-members
 	transform: rotate(-45deg)
@@ -2485,11 +2555,6 @@ a, input, textarea, select
 
 #about
 	padding-bottom: 120px
-
-.section-wrap
-	background-repeat: no-repeat
-	background-size: auto !important
-	background-position: center bottom !important
 
 @media (min-width: 992px)
 	#links

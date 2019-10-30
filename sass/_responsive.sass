@@ -44,12 +44,12 @@
 			max-height: 46px
 		.nav-menu
 			line-height: normal
-			padding: 0
-			margin: 0
+			padding: 72px 0
 			position: absolute
-			left: 0
-			top: 100%
-			width: 100%
+			top: 0
+			height: 100vh
+			left: 100%
+			width: 260px
 			background: #fff
 			z-index: 98
 			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12)
@@ -81,6 +81,10 @@
 			&.active 
 				> a
 					color: #fff !important
+
+	.header-in
+		.header
+			transform: translateX(-260px)
 
 @media (max-width: 1200px)
 	.service .service-text

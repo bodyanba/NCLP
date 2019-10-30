@@ -24,6 +24,11 @@ $(document).ready(function() {
             $('#header').removeClass("header-bg");
         };
     });
+
+    $(".navbar-toggle").on("click", function() {
+        $(this).toggleClass("active");
+        $("body").toggleClass("header-in");
+    });
     
 	//---- tooltip
 	$('.re-tooltip').each(function(){
@@ -99,6 +104,8 @@ $(document).ready(function() {
             }
         }
     });
+
+    $(window).enllax();
 
 });
 
