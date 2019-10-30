@@ -146,7 +146,7 @@
     <g id="Слой_2" data-name="Слой 2">
         <g id="Layer_1" data-name="Layer 1">
             <rect class="cls-1 cls-4" x="86.24" y="88.71" width="8.45" height="8.45" transform="translate(-39.22 91.19) rotate(-45)" />
-            <rect class="cls-3" x="113.29" y="43.42" width="8.45" height="8.45" transform="translate(0.73 97.05) rotate(-45)" />
+            <rect class="cls-3 cls-4" x="113.29" y="43.42" width="8.45" height="8.45" transform="translate(0.73 97.05) rotate(-45)" />
             <rect class="cls-1 cls-4" x="153.09" y="49.77" width="3.5" height="3.5" transform="translate(8.92 124.58) rotate(-45)" />
             <rect class="cls-3 cls-4" x="185.72" y="29.21" width="5.53" height="5.53" transform="translate(32.59 142.65) rotate(-45)" />
             <rect class="cls-1 cls-4" x="219.33" y="20.91" width="4.02" height="4.02" transform="translate(48.62 163.22) rotate(-45)" />
@@ -157,7 +157,7 @@
             <rect class="cls-3 cls-4" x="408.54" y="96.2" width="3.5" height="3.5" transform="translate(50.91 318.81) rotate(-45)" />
             <rect class="cls-1 cls-4" x="452.12" y="86.05" width="8.45" height="8.45" transform="translate(69.83 349.13) rotate(-45)" />
             <rect class="cls-1 cls-4" x="453.08" y="133.19" width="5.53" height="5.53" transform="translate(37.38 362.16) rotate(-45)" />
-            <rect class="cls-3" x="477.74" y="197.73" width="5.53" height="5.53" transform="translate(-1.04 398.49) rotate(-45)" />
+            <rect class="cls-3 cls-4" x="477.74" y="197.73" width="5.53" height="5.53" transform="translate(-1.04 398.49) rotate(-45)" />
             <rect class="cls-3 cls-4" x="494.15" y="232.38" width="3.5" height="3.5" transform="translate(-20.31 419.23) rotate(-45)" />
             <rect class="cls-1 cls-4" x="489.96" y="322.89" width="8.45" height="8.45" transform="translate(-86.56 445.25) rotate(-45)" />
             <rect class="cls-1 cls-4" x="479.83" y="346.48" width="3.5" height="3.5" transform="translate(-105.18 442.52) rotate(-45)" />
@@ -168,7 +168,7 @@
             <rect class="cls-3 cls-4" x="345.49" y="497.95" width="5.53" height="5.53" transform="translate(-252.06 392.91) rotate(-45)" />
             <rect class="cls-1 cls-4" x="324.53" y="531.7" width="5.53" height="5.53" transform="translate(-282.06 387.97) rotate(-45)" />
             <rect class="cls-1 cls-4" x="278.13" y="525.8" width="5.53" height="5.53" transform="translate(-291.48 353.44) rotate(-45)" />
-            <rect class="cls-1" x="223.5" y="519.98" width="3.5" height="3.5" transform="translate(-302.95 312.08) rotate(-45)" />
+            <rect class="cls-1 cls-4" x="223.5" y="519.98" width="3.5" height="3.5" transform="translate(-302.95 312.08) rotate(-45)" />
             <rect class="cls-3 cls-4" x="194" y="532.1" width="8.45" height="8.45" transform="translate(-321.18 297.25) rotate(-45)" />
             <rect class="cls-3 cls-4" x="151.51" y="503.31" width="8.45" height="8.45" transform="translate(-313.27 258.78) rotate(-45)" />
             <rect class="cls-1 cls-4" x="115.19" y="505.75" width="3.5" height="3.5" transform="translate(-324.6 231.33) rotate(-45)" />
