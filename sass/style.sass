@@ -1,24 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:200,300,400,500,600,600')
 
-\:focus
-	outline: none
+*
+	outline: none !important
 
 \:-moz-any-link:focus
-	outline: none
 	text-decoration: none
 
 \::-moz-focus-inner
 	padding: 0
 	border: 0
-	outline: none
 
 \::selection, ::-moz-selection
 	color: #fff
 	background: #e72732
-
-html
-	width: 100%
-	min-height: 100%
 
 body
 	width: 100%
@@ -49,33 +43,12 @@ ul, ol
 	padding: 0
 	margin: 0
 
-.icons-list
-	list-style: none
-
 ul li, ol li
 	padding: 5px 0
 	font-size: 18px
 	line-height: 24px
 
-.icons-list
-	li
-		padding: 5px 0
-		font-size: 18px
-		line-height: 24px
-	i
-		font-size: 12px
-		margin-right: 8px
-		color: #444
-	strong
-		color: #666
-
-.dark-section .icons-list
-	color: #11112e
-	i, strong
-		color: #11112e
-
 h1, h2, h3, h4, h5, h6
-	font-family: 'Bai Jamjuree',sans-serif
 	color: #11112e
 	margin: 0 0 10px
 	font-weight: 700
@@ -101,7 +74,6 @@ h6
 p
 	color: #11112e
 	margin: 0 0 10px
-	font-family: 'Bai Jamjuree',sans-serif
 	font-size: 20px
 	line-height: 30px
 	font-weight: 400
@@ -109,7 +81,7 @@ p
 		font-weight: 600
 
 .container
-	width: 75%
+	width: 80%
 
 .light-text
 	color: #fff
@@ -120,23 +92,13 @@ p
 .uppercase
 	text-transform: uppercase
 
-.contant-form-bx label
-	color: #444
-	font-size: 13px
-	font-weight: 400
-	margin-bottom: 4px
-
-.dark-section .contant-form-bx label
-	color: #ddd
-
 input, textarea
 	font-size: 13px
 	font-weight: 400
 	margin-bottom: 15px
-	outline: none
 	max-width: 100%
 
-input[type="text"]
+input[type="text"], textarea
 	color: #444
 	min-width: 100%
 	padding: 6px 9px
@@ -144,27 +106,8 @@ input[type="text"]
 	border: 1px solid #ccc
 	&:hover, &:focus
 		color: #444
-		min-width: 100%
-		padding: 6px 9px
 		background-color: #fff
 		border: 1px solid #ccc
-
-textarea
-	color: #444
-	min-width: 100%
-	padding: 6px 9px
-	background-color: #fff
-	border: 1px solid #ccc
-	&:hover, &:focus
-		color: #444
-		min-width: 100%
-		padding: 6px 9px
-		background-color: #fff
-		border: 1px solid #ccc
-
-.hr.border
-	height: 1px
-	background-color: #f3f2f1
 
 .dark-section
 	input[type="text"]
@@ -328,25 +271,6 @@ input[type="submit"]
 		max-height: 100px
 		margin-bottom: 20px
 
-.section-overlay
-	position: absolute
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	z-index: 10
-	background: rgba(0, 0, 0, 0.5)
-
-.section-home .section-overlay
-	position: absolute
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	z-index: 31
-	background: linear-gradient(to bottom, rgba(17, 17, 46, 0.9) 0%, rgba(17, 17, 46, 0.33) 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11112e',endColorstr='#cc11112e',GradientType=0)
-
 .page-section-overlay
 	position: absolute
 	top: 0
@@ -369,16 +293,6 @@ input[type="submit"]
 		height: 100%
 		z-index: 10
 		background: rgba(245, 246, 247, 0.9)
-
-#container
-	border-bottom: 1px solid #f3f2f1
-	padding-bottom: 30px
-	.title
-		margin-bottom: 12px
-	p
-		margin-bottom: 14px
-	h1, h2, h3, h4, h5, h6
-		margin-bottom: 8px
 
 .page-header
 	position: relative
@@ -439,9 +353,6 @@ input[type="submit"]
 			border-bottom-color: #e72732 !important
 		&:hover > a, &.active > a
 			color: #e72732 !important
-
-#hidden-header
-	background-color: #fff
 
 #header
 	ul
@@ -556,9 +467,6 @@ input[type="submit"]
 		top: 0
 		opacity: 1
 		animation-timing-function: ease-in
-
-.container
-	width: 80%
 
 .header
 	.nav-menu .drop
@@ -704,25 +612,10 @@ ul.nav-tabs
 		max-height: 48px
 		margin-bottom: 20px
 
-.before h1:before
-	background: url(../images/sign.png) no-repeat
-	width: 40px
-	height: 41px
-	display: block
-	content: ""
-	margin: 0 auto 10px
-
 .center-col
 	float: none !important
 	margin-left: auto !important
 	margin-right: auto !important
-
-.container-fluid
-	margin-left: auto
-	margin-right: auto
-	padding-left: 15px
-	padding-right: 15px
-	overflow: hidden
 
 .mt60
 	margin-top: 60px
@@ -744,6 +637,9 @@ ul.nav-tabs
 
 .mb0
 	margin-bottom: 0 !important
+
+.m0
+	margin: 0
 
 .mfp-bg
 	background: #11112e !important
@@ -786,7 +682,6 @@ ul.nav-tabs
 			font-weight: 400
 			margin-bottom: 10px
 			border-radius: 0
-			outline: none
 			width: 100%
 			transition: all .3s ease-in-out
 			border: 1px solid
@@ -800,7 +695,6 @@ ul.nav-tabs
 		font-weight: 400
 		margin-bottom: 10px
 		border-radius: 0
-		outline: none
 		width: 100%
 		transition: all .3s ease-in-out
 		border: 1px solid
@@ -815,7 +709,6 @@ ul.nav-tabs
 			font-weight: 400
 			margin-bottom: 10px
 			border-radius: 0
-			outline: none
 			width: 100%
 			transition: all .3s ease-in-out
 			border: 1px solid
@@ -915,19 +808,6 @@ ul.nav-tabs
 	&.profile .popup-info
 		padding: 4%
 
-#success
-	clear: both
-	margin: 0 0 20px
-	text-align: center
-	background-color: #dff0d8
-	border-color: #d6e9c6
-	color: #3c763d
-	border-radius: 5px
-	padding: 15px 0
-
-.border-top
-	border-top: 1px solid #eee
-
 .bg-gray
 	background: #fff
 	background: radial-gradient(ellipse at center, #fff 0%, #f0f1f2 100%) !important
@@ -938,344 +818,13 @@ ul.nav-tabs
 	background: linear-gradient(to bottom, #f0f1f2 0%, #fff 100%)
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f1f2',endColorstr='#ffffff',GradientType=0)
 
-.bg-gray3
-	background: #fff
-	background: linear-gradient(to bottom, #fff 0%, #f0f1f2 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f0f1f2',GradientType=0)
-
 .tooltip
-	font-family: 'Bai Jamjuree',sans-serif
+	font-family: 'Bai Jamjuree', sans-serif
 	white-space: nowrap
-
-.m0
-	margin: 0
-
-.post-head h3
-	font-weight: 300
-	line-height: 38px
-	font-size: 30px
-	letter-spacing: 0
-
-.post-meta
-	list-style: none
-	li
-		display: inline-block
-		font-size: 15px
-		padding: 0
-		margin: 0
-		color: #ccc
-		span
-			color: #000
-		a
-			color: #e72732
-		&:after
-			content: "/"
-			margin: 0 8px 0 10px
-			color: #eee
-			font-size: 10px
-			position: relative
-			top: -1px
-		&:last-child:after
-			display: none
-
-.post .gallery-slider
-	margin-bottom: 30px
-	text-align: center
 
 .twitter
 	padding: 15px
 	background: #fff
-
-.widget
-	margin-bottom: 40px
-	.widget-heading
-		h4
-			font-size: 16px
-			line-height: 24px
-			font-weight: 600
-			margin-bottom: 10px
-			text-transform: uppercase
-			border-bottom: 1px solid #eee
-			padding-bottom: 10px
-			span
-				padding-bottom: 13px
-				border-bottom: 1px solid #e72732
-		h3
-			margin-bottom: 12px
-			padding-bottom: 6px
-			border-bottom: 1px solid #eee
-			font-weight: 600
-			span
-				padding-bottom: 6px
-				border-bottom: 1px solid #e72732
-
-.widget-categories ul, .widget-recent-posts ul
-	list-style: none
-
-.widget-categories ul li
-	font-size: 15px
-	padding: 5px 0 5px 20px
-	position: relative
-	&:before
-		content: "\e724"
-		font-family: 'themify'
-		color: #e72732
-		position: absolute
-		top: 6px
-		left: 0
-		font-size: 12px
-	a
-		color: #11112e
-		&:hover
-			color: #e72732
-
-.widget-recent-posts ul li
-	font-size: 16px
-	line-height: 22px
-	padding: 10px 0
-	border-bottom: 1px solid #f4f4f4
-	&:last-child
-		border-bottom: none
-	span
-		font-size: 11px
-		display: block
-		color: #aaa
-	a
-		color: #e72732
-		&:hover
-			color: #e72732
-
-.widget-tags a
-	display: inline-block
-	border-radius: 2px
-	font-size: 13px
-	color: #999
-	padding: 3px 10px
-	margin: 0 2px 6px 0
-	text-transform: capitalize
-	&:hover
-		color: #fff !important
-
-.pagination
-	clear: both
-	display: block
-	a
-		font-size: 16px
-		width: 48px
-		height: 48px
-		line-height: 48px
-		text-align: center
-		font-weight: 400
-		margin: 0 3px
-		text-align: center
-		display: inline-block
-		background: #fff
-		color: #11112e
-		vertical-align: top
-	span
-		font-size: 16px
-		width: 48px
-		height: 48px
-		line-height: 48px
-		text-align: center
-		font-weight: 400
-		margin: 0 3px
-		text-align: center
-		display: inline-block
-		background: #fff
-		color: #11112e
-		vertical-align: top
-		color: #fff
-		&.inactive
-			color: #ccc
-			background: #fff
-		i
-			font-size: 16px
-			line-height: 48px
-	a
-		&:hover
-			background: #e72732
-			color: #fff !important
-			box-shadow: none
-		i
-			font-size: 16px
-			line-height: 48px
-
-.post-share
-	margin-top: 20px
-	a
-		display: inline-block
-		border-radius: 3px
-		transition: all .2s ease-in-out
-		&.facebook
-			background-color: #507CBE
-			&:hover
-				background-color: #3E68A8
-		&.twitter
-			background-color: #63CDF1
-			&:hover
-				background-color: #36BFED
-		&.gplus
-			background-color: #F16261
-			&:hover
-				background-color: #EF4545
-		&.linkedin
-			background-color: #90CADD
-			&:hover
-				background-color: #72BBD3
-		&.mail
-			background-color: #FFA803
-			&:hover
-				background-color: #FF5E00
-		i
-			width: 36px
-			height: 36px
-			line-height: 36px
-			text-align: center
-			display: block
-			color: #fff
-			font-size: 1em
-
-.meta-summary
-	list-style: none
-	display: block
-	margin: 30px 0
-	li
-		margin: 0 -2px
-		width: 33.3333%
-		padding: 0
-		display: inline-block
-		text-align: center
-		border-right: 1px solid #eee
-		vertical-align: top
-		&:last-child
-			border-right: none
-
-.meta-detail
-	margin-bottom: 30px
-	display: block
-	h4
-		margin: 0
-		font-size: 15px
-	img
-		max-height: 40px
-		filter: grayscale(100%)
-		margin: 0 0 10px
-		opacity: .66
-	&:hover img
-		filter: grayscale(0%)
-		opacity: 1
-	p
-		margin: 0
-
-.blog-layout
-	.post
-		position: relative
-	.post-right
-		padding-left: 120px
-
-.post-thumb
-	margin-bottom: 18px
-	overflow: hidden
-
-.blog-layout
-	.post-head
-		margin-bottom: 18px
-		q
-			font-family: 'Raleway',sans-serif
-			color: #111
-			position: relative
-			display: block
-			font-size: 16px
-			line-height: 26px
-			font-weight: 600
-			margin-bottom: 4px
-			letter-spacing: 1px
-			cursor: pointer
-			text-transform: uppercase
-			transition: color .2s ease-in-out
-			&::before
-				position: absolute
-				left: -12px
-				top: 0
-			a
-				color: #111
-		h3
-			text-transform: uppercase
-			color: #11112e
-			a
-				color: #11112e
-	.post:hover .post-head h3 a
-		color: #e72732
-
-.post-head .post-meta
-	list-style: none
-
-	li
-		display: inline-block
-		font-size: 13px
-		color: #999
-
-		&:after
-			content: "/"
-			margin: 0 10px 0 14px
-			color: #999
-
-		&:last-child:after
-			display: none
-
-.blog-layout
-	.post-head .post-meta li a
-		color: #e72732
-		text-transform: uppercase
-	.post-date
-		position: absolute
-		left: 0
-		top: 4px
-		color: #fff
-		text-align: center
-		padding: 0
-		border-radius: 4px
-		transition: background-color .3s ease-in-out
-		background-color: #fff
-		font-size: 12px
-		line-height: 16px
-		display: block
-		font-weight: 400
-		text-transform: uppercase
-	.post
-		.post-date .date
-			font-size: 30px
-			line-height: 30px
-			display: block
-			font-weight: 600
-			background-color: #11112e
-			padding: 15px
-		&:hover .post-date .date
-			background-color: #e72732
-		.post-date
-			.date .month
-				display: block
-				letter-spacing: 1px
-				font-size: 12px
-				line-height: 16px
-				display: block
-				font-weight: 400
-			.year
-				padding: 10px
-				color: #11112e
-				font-weight: 600
-		.more-link
-			margin-top: 12px
-
-.post .read-more
-	letter-spacing: 1px
-	text-transform: uppercase
-	font-size: 13px
-	color: #e72732
-
-.blog-layout hr
-	margin: 50px 0
 
 .pro-carousel
 	padding: 0
@@ -1445,17 +994,6 @@ ul.nav-tabs
 		content: ""
 		margin-left: 10px
 
-.before h2:before
-	background: url(../images/sign.png) no-repeat
-	width: 60px
-	height: 40px
-	display: block
-	content: " "
-	margin: 0 auto 10px
-
-iframe .timeline-Header
-	padding: 25px !important
-
 .objective
 	padding: 0 30px
 	margin-bottom: 30px
@@ -1611,64 +1149,6 @@ iframe .timeline-Header
 .blue-dark
 	background: #21295c
 
-.links
-	.container-fluid
-		padding: 0
-	.row
-		margin: 0
-		padding: 0
-	div[class*='col-md-']
-		padding: 0
-		margin: 0
-
-.program
-	ul.nav-tabs
-		width: 100%
-		border-bottom: none
-	.nav-tabs > li
-		float: none
-		margin: 0
-		padding: 0
-		border: none
-	ul.nav-tabs li
-		display: block
-		border: none
-		a
-			margin: 0 0 10px
-			color: #bbb
-			font-size: 15px
-			line-height: 40px
-			font-weight: 600
-			text-transform: uppercase
-			letter-spacing: 0
-			outline: none
-			padding: 0
-			border: none !important
-		&.active a
-			background: none
-		a span
-			width: 40px
-			height: 40px
-			display: inline-block
-			line-height: 40px
-			color: #bbb
-			background: #fff
-			margin: 0 10px 0 0
-			text-align: center
-		&.active a
-			border: none !important
-			color: #000
-			opacity: 1
-			span
-				color: #fff
-
-	.tab-pane
-		padding: 30px
-		border-radius: 3px
-		transition: all .3s ease-in-out
-		position: relative
-		background: #fff
-
 .addon
 	position: relative
 	padding: 0
@@ -1807,24 +1287,6 @@ iframe .timeline-Header
 
 .testimonials
 	text-align: center
-	.sultan
-		width: 140px
-		height: 140px
-		line-height: 140px
-		display: block
-		text-align: center
-		margin: 0 auto 35px
-		transform: rotate(-45deg)
-		overflow: hidden
-		position: relative
-		border: 5px solid #fff
-	&:hover .sultan
-		border-color: #e72732
-	.sultan img
-		transform: rotate(45deg) scale(1.4)
-		display: block
-		width: 100%
-		height: 100%
 	q
 		font-size: 26px
 		line-height: 34px
@@ -1834,43 +1296,6 @@ iframe .timeline-Header
 		font-size: 13px
 		letter-spacing: 1px
 		text-transform: uppercase
-
-.advisor
-	width: 300px
-	height: 300px
-	line-height: 300px
-	display: block
-	text-align: center
-	margin: 0 auto
-	transform: rotate(-45deg)
-	overflow: hidden
-	position: relative
-	border: 5px solid #fff
-	position: absolute
-	top: -70px
-	left: 0
-	right: 0
-	img
-		transform: rotate(45deg) scale(1.4)
-		display: block
-
-#diamond
-	width: 0
-	height: 0
-	border: 30px solid transparent
-	border-bottom-color: #e72732
-	position: relative
-	top: -30px
-	margin: 0 auto 20px
-	&:after
-		content: ''
-		position: absolute
-		left: -30px
-		top: 30px
-		width: 0
-		height: 0
-		border: 30px solid transparent
-		border-top-color: #e72732
 
 .page-loader
 	display: block
@@ -1892,23 +1317,22 @@ iframe .timeline-Header
 		width: 50px
 		height: 50px
 		text-align: center
-
-.loader
-	width: 110px
-	height: 110px
-	position: absolute
-	top: calc(50% - 55px)
-	left: 0
-	right: 0
-	text-align: center
-	margin: 0 auto
-	border-top: 3px solid #21295c
-	border-right: 3px solid #21295c
-	border-bottom: 3px solid #21295c
-	border-left: 3px solid #fff
-	border-radius: 50%
-	animation: spinner 600ms infinite linear
-	z-index: 1000
+	.loader
+		width: 110px
+		height: 110px
+		position: absolute
+		top: calc(50% - 55px)
+		left: 0
+		right: 0
+		text-align: center
+		margin: 0 auto
+		border-top: 3px solid #21295c
+		border-right: 3px solid #21295c
+		border-bottom: 3px solid #21295c
+		border-left: 3px solid #fff
+		border-radius: 50%
+		animation: spinner 600ms infinite linear
+		z-index: 1000
 
 @keyframes spinner
 	0%
@@ -1929,7 +1353,6 @@ iframe .timeline-Header
 	text-align: center
 	color: #fff
 	z-index: 37
-	outline: none
 	background: transparent
 	&:hover
 		color: #fff
@@ -1947,59 +1370,6 @@ iframe .timeline-Header
 		top: 20%
 		left: -20%
 
-#goTop
-	position: absolute
-	bottom: -36px
-	left: 0
-	right: 0
-	margin: 0 auto
-	z-index: 0
-	width: 70px
-	height: 70px
-	line-height: 70px
-	text-align: center
-	color: #fff
-	z-index: 37
-	outline: none
-	background: transparent
-	&:hover
-		color: #fff
-		background: #e72732
-	&:focus
-		color: #fff
-	i
-		position: relative
-		display: block
-		font-size: 16px
-		top: 10%
-		left: -29.5%
-		line-height: 16px
-	&:hover i
-		top: 20%
-		left: -20%
-
-.social-icons ul
-	list-style: none
-	margin: 20px 0 0
-	li
-		display: inline-block
-		a
-			font-size: 16px
-			display: block
-			margin: 0 5px
-			width: 40px
-			line-height: 40px
-			height: 40px
-			color: #fff
-			&:hover
-				background: #e72732
-			i
-				line-height: 40px
-				color: #fff
-				display: block
-			&:hover i
-				color: #fff
-
 .clock-countdown
 	bottom: 0
 	left: 0
@@ -2007,55 +1377,53 @@ iframe .timeline-Header
 	position: relative
 	right: 0
 	top: 0
-
-.coundown-timer
-	font-size: 30px
-	font-weight: 600
-	text-transform: uppercase
-	text-align: center
-	margin: 0
-
-.single-counter
-	display: inline-block
-	letter-spacing: 5px
-	position: relative
-	width: 92px
-	font-family: 'Bai Jamjuree',sans-serif
-	text-align: center
-	margin-bottom: 30px
-	&::before
-		content: ""
-		height: 4px
-		left: 0
-		position: absolute
-		top: 60px
-		width: 100%
-	&:last-child
-		border-right: none
-		&::after
-			display: none
-	span
-		display: block
-	.numb
-		line-height: 64px
-		width: 70px
-		height: 70px
-		margin: 0 auto 30px
-		letter-spacing: -1px
-		display: block
-		border: 1px solid rgba(255, 255, 255, 0.25)
-		text-align: center
-	&:hover .numb
-		background: #e72732
-		border-color: #e72732
-	.normal
-		font-size: 13px
+	.coundown-timer
+		font-size: 30px
 		font-weight: 600
-		letter-spacing: 2px
-		margin-top: 10px
-		color: rgba(255, 255, 255, 0.33)
-	&:hover .normal
-		color: #fff
+		text-transform: uppercase
+		text-align: center
+		margin: 0
+	.single-counter
+		display: inline-block
+		letter-spacing: 5px
+		position: relative
+		width: 92px
+		font-family: 'Bai Jamjuree',sans-serif
+		text-align: center
+		margin-bottom: 30px
+		&::before
+			content: ""
+			height: 4px
+			left: 0
+			position: absolute
+			top: 60px
+			width: 100%
+		&:last-child
+			border-right: none
+			&::after
+				display: none
+		span
+			display: block
+		.numb
+			line-height: 64px
+			width: 70px
+			height: 70px
+			margin: 0 auto 30px
+			letter-spacing: -1px
+			display: block
+			border: 1px solid rgba(255, 255, 255, 0.25)
+			text-align: center
+		&:hover .numb
+			background: #e72732
+			border-color: #e72732
+		.normal
+			font-size: 13px
+			font-weight: 600
+			letter-spacing: 2px
+			margin-top: 10px
+			color: rgba(255, 255, 255, 0.33)
+		&:hover .normal
+			color: #fff
 
 .values
 	ul.nav-tabs
@@ -2081,7 +1449,6 @@ iframe .timeline-Header
 			font-weight: 600
 			text-transform: uppercase
 			letter-spacing: 1px
-			outline: none
 			padding: 0
 			border: none !important
 			.tab-img
@@ -2472,6 +1839,58 @@ iframe .timeline-Header
 				&:hover
 					color: #e72732
 
+.social-icons ul
+	list-style: none
+	margin: 20px 0 0
+	li
+		display: inline-block
+		a
+			font-size: 16px
+			display: block
+			margin: 0 5px
+			width: 40px
+			line-height: 40px
+			height: 40px
+			color: #fff
+			&:hover
+				background: #e72732
+			i
+				line-height: 40px
+				color: #fff
+				display: block
+			&:hover i
+				color: #fff
+
+#goTop
+	position: absolute
+	bottom: -36px
+	left: 0
+	right: 0
+	margin: 0 auto
+	z-index: 0
+	width: 70px
+	height: 70px
+	line-height: 70px
+	text-align: center
+	color: #fff
+	z-index: 37
+	background: transparent
+	&:hover
+		color: #fff
+		background: #e72732
+	&:focus
+		color: #fff
+	i
+		position: relative
+		display: block
+		font-size: 16px
+		top: 10%
+		left: -29.5%
+		line-height: 16px
+	&:hover i
+		top: 20%
+		left: -20%
+
 .collapse-group .collapse-heading h4 a
 	color: #e72732
 
@@ -2479,6 +1898,7 @@ iframe .timeline-Header
 	background-color: #e72732
 
 .faq
+	text-align: left
 	.panel
 		padding: 15px 0
 		border-bottom: 1px solid #e5e6e7
@@ -2558,8 +1978,6 @@ iframe .timeline-Header
 					top: 0
 					left: 0
 					font-size: 14px
-.faq
-	text-align: left
 	.collapse-heading h4 a:hover
 		color: #e72732 !important
 
@@ -2648,6 +2066,22 @@ iframe .timeline-Header
 			margin-left: 0
 		&:nth-child(3) > div:first-child
 			margin-left: 27%
+	@media (max-width: 550px)
+		transform: rotate(0)
+		margin: 0
+		li
+			text-align: center
+			> div
+				float: none
+				display: inline-block
+				width: 49%
+				margin: 0 !important
+				.diamond-icon
+					transform: rotate(-45deg)
+	@media (max-width: 399px)
+		li 
+			> div
+				width: 80%
 
 .member-details
 	> div
@@ -2703,15 +2137,6 @@ iframe .timeline-Header
 			font-size: 20px
 			color: #fff
 
-.member-info
-	position: absolute
-	top: 50%
-	transform: rotate(45deg) translate(-12px, 15px)
-	left: 0
-	right: 0
-	z-index: 2
-	text-align: center
-
 .flex-center
 	display: flex
 	flex-direction: row
@@ -2728,28 +2153,6 @@ iframe .timeline-Header
 	.sm-text-center
 		text-align: center
 
-@media (max-width: 550px)
-	.team-members
-		transform: rotate(0)
-		margin: 0
-		li
-			text-align: center
-			> div
-				float: none
-				display: inline-block
-				width: 49%
-				margin: 0 !important
-				.link 
-
-				.diamond-icon
-					transform: rotate(-45deg)
-	.team-overview
-		padding: 15px
-
-@media (max-width: 399px)
-	.team-members li > div
-		width: 80%
-
 .scroll-down-icon, #goTop, .social-icons ul li a, .coundown-timer .numb, .values ul.nav-tabs li a .tab-img, .member-box .member-pic, .service .service-img .diamond-icon, .member-box .member-details:before, .cd-timeline-navigation a, .client a, .sign, .cd-horizontal-timeline .events a::after, .team-members li > div .link
 	transform: rotate(45deg)
 
@@ -2762,16 +2165,11 @@ iframe .timeline-Header
 	&:hover .member-pic img
 		transform: rotate(-45deg) scale(1.5)
 
-.pagination
-	a, span
-		background: #fff
-		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15)
-
 .c-input:hover, .blog:hover, .address .address-img, .program-detail .program-img
 	background: #fff
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15)
 
-.brands a:hover, .blog:hover, .what:hover, .blog-layout .post:hover .post-date, .twitter:hover
+.brands a:hover, .blog:hover, .what:hover, .twitter:hover
 	background: #fff
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
 
@@ -2779,12 +2177,6 @@ iframe .timeline-Header
 	background: #21295c
 	background: linear-gradient(135deg, #21295c 30%, #e72732 100%)
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#21295c',endColorstr='#e72732',GradientType=1)
-
-.pagination
-	span, a:hover
-		background: #21295c
-		background: linear-gradient(135deg, #21295c 30%, #e72732 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#21295c',endColorstr='#e72732',GradientType=1)
 
 .member-box .member-details .member-links a i, .widget-tags a:hover, .approach i, .why .nav-tabs li.active a .icon-box .icon-img, .icon-box:hover .icon-img, .header .nav-menu .drop .dropdown li:hover a, .instagram li, .back-to-top i:hover, .cta, .links-section h4 .head-line, .service:hover .service-img, .appro .appro-img, .diamond li:hover, .program ul.nav-tabs li.active a span, .member-box:hover .member-pic, .member-details > div
 	background: #21295c
@@ -2855,11 +2247,6 @@ a, input, textarea, select
 	img
 		transition: all .3s ease-in-out
 
-.about
-	transition: all .3s ease-in-out
-	.about-img img
-		transition: all .3s ease-in-out
-
 .tec li
 	transition: all .3s ease-in-out
 	img
@@ -2903,11 +2290,6 @@ a, input, textarea, select
 .company:after
 	transition: all .3s ease-in-out
 
-.back-to-top
-	transition: all .3s ease-in-out
-	i
-		transition: all .3s ease-in-out
-
 .member-box .member-pic img
 	transition: all .3s ease-in-out
 
@@ -2921,22 +2303,9 @@ a, input, textarea, select
 .member-box .member-pic, .mail-subscribe-widget form button, .what
 	transition: all .3s ease-in-out
 
-.what-box
-	transition: all .3s ease-in-out
-	.what-img
-		transition: all .3s ease-in-out
-		img
-			transition: all .3s ease-in-out
-
-	.what-info h3
-		transition: all .3s ease-in-out
-
 .program-detail
 	img, h4
 		transition: all .3s ease-in-out
-
-.blog-layout .post .post-date .date
-	transition: all .3s ease-in-out
 
 .client a
 	transition: all .3s ease-in-out
@@ -2953,10 +2322,6 @@ a, input, textarea, select
 
 .testimonials
 	transition: all .3s ease-in-out
-	.sultan
-		transition: all .3s ease-in-out
-		img
-			transition: all .3s ease-in-out
 
 .single-counter
 	.numb, .normal
@@ -3051,12 +2416,6 @@ a, input, textarea, select
 	.tab-pane
 		paddinhg: 0 80px
 
-.content-text-block
-	border-bottom: 1px solid #a1a1a1
-	line-height: 1.6
-	padding-bottom: 16px
-	margin-bottom: 18px
-
 .calendar-top
 	padding-bottom: 90px
 	line-height: 1.35
@@ -3150,19 +2509,6 @@ a, input, textarea, select
 			background-color: #9b9b9d
 		.overlay
 			background-color: rgba(88, 89, 91, 0.8)
-
-.modal-content
-	box-shadow: none
-	border: 4px solid #8d3c65
-	border-radius: 0
-	padding: 47px
-	p
-		line-height: 1.35
-
-.modal-backdrop
-	background-color: #fff
-	&.in
-		opacity: 0.8
 
 .semibold
 	font-weight: 600

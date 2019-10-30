@@ -158,7 +158,6 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-    $(".loader-container").delay(600).fadeOut(600);
     $("#pageloader").delay(1200).fadeOut(800);
 });
 
