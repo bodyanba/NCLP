@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    'use strict';
 
     //---------- FullScreen Section JS
 	function full_screen_section(){
