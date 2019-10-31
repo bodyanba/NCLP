@@ -609,6 +609,9 @@ ul.nav-tabs {
 .mt10 {
   margin-top: 10px; }
 
+.mb4 {
+  margin-bottom: 4px !important; }
+
 .mb0 {
   margin-bottom: 0 !important; }
 
@@ -2740,6 +2743,18 @@ a, input, textarea, select {
 #profile {
   background: url(../images/profile.jpg) 50% 50%; }
 
+.sec-my p {
+  font-size: 18px;
+  line-height: 24px; }
+
+.ul {
+  text-align: left;
+  margin-bottom: 10px;
+  padding-left: 20px; }
+
+.d-inline-block {
+  display: inline-block; }
+
 @media (min-width: 1240px) {
   #nav-menu {
     display: block !important; } }
@@ -2938,7 +2953,7 @@ a, input, textarea, select {
     font-size: 20px;
     line-height: 25px; }
 
-  body, p, ul li, ol li {
+  body, p, ul li, ol li, .sec-my p {
     font-size: 15px;
     line-height: 22px; }
 
