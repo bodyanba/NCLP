@@ -2180,7 +2180,10 @@ ul.nav-tabs {
           margin: 0 !important; }
           .team-members li > div .diamond-icon {
             -webkit-transform: rotate(-45deg);
-                    transform: rotate(-45deg); } }
+                    transform: rotate(-45deg); }
+          .team-members li > div .link {
+            -webkit-transform: none !important;
+                    transform: none !important; } }
   @media (max-width: 399px) {
     .team-members li > div {
       width: 80%; } }
