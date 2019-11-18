@@ -84,7 +84,7 @@
             <br>
             <br>
             <img src="../assets/img/logo-pace.svg" alt="" width="300">
-            <div id="LogoPreloader">
+            <div id="preloader">
               <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
                   <defs>
                       <clipPath id="animationMask_iVYvKzPYob">
@@ -219,25 +219,8 @@
     <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
     <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-video.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-
-    <script type="text/javascript" src="../assets/libs/bodymovin/bodymovin.min.js"></script>
+    <script src="../assets/libs/bodymovin/bodymovin.min.js"></script>
     <script src="../assets/js/common.js"></script>
-
-    <script>
-        // Preloader
-        var anim;
-        var animData = {
-            container: document.getElementById('LogoPreloader'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            rendererSettings: {
-                progressiveLoad: false
-            },
-        };
-        anim = bodymovin.loadAnimation(animData);
-        anim.setSpeed(1);
-    </script>
 
   </body>
 </html>
