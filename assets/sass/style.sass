@@ -1,0 +1,362 @@
+@import colors
+
+$transition: .3s
+
+body
+	font-family: 'Bai Jamjuree', sans-serif
+	color: $color-body
+	&:before 
+		content: ''
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		transition: $transition
+		background-color: $color-warning
+		background-image: url(../img/logo-pace.svg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 300px, auto
+		z-index: 9999
+		@media (max-width: 991.98px)
+			background-size: 300px, auto
+
+main
+	background-color: #000 
+	position: relative
+	z-index: 2
+
+.pace-container
+	overflow: hidden
+	opacity: 0
+	visibility: hidden
+	transition: $transition
+.pace-done 
+	&:before 
+		opacity: 0
+		visibility: hidden
+	.pace-container
+		opacity: 1
+		visibility: visible
+	.first, .second
+		opacity: 1
+		transform: none
+.pace
+	pointer-events: none
+	user-select: none
+	&-inactive
+		display: none
+	&-progress
+		position: fixed
+		top: 0
+		right: 100%
+		width: 100%
+		border-top: 3px solid #fff
+		z-index: 99999
+
+@import fonts
+
+*
+	outline: none !important
+
+img
+	max-width: 100%
+	height: auto
+
+a 
+	color: $color-info
+	transition: $transition
+	&:hover
+		color: $color-danger
+		text-decoration: none
+
+hr 	
+	border-top-color: $color-hr
+	margin: 0
+
+.btn
+	border-radius: 0
+	padding: 13.5px 28px 13.5px 31px
+	border: none
+	position: relative
+	text-transform: uppercase
+	font-weight: bold
+	box-shadow: none !important
+	font-size: 17px
+	span 
+		vertical-align: middle
+	&:before 
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		border: 1px solid transparent
+		transition: $transition
+		transform: translate(7px, 7px)
+		z-index: -1
+	&:after 
+		content: ''
+		display: inline-block
+		font-size: 0
+		width: 7px
+		height: 12px
+		background-size: cover
+		margin-left: 22px
+		vertical-align: middle
+		transition: $transition
+	&:hover 
+		&:before 	
+			transform: none
+		&:after 
+			transform: translateX(-5px)
+	&:active
+		&:after 
+			transform: translateX(5px)
+.btn-danger
+	background: linear-gradient(to right, $color-danger, $color-warning)
+	&:before 
+		border-color: $color-warning
+	&:after
+		background-image: url(../img/arrow-white.svg)
+	&.btn-sm
+		background: $color-danger
+.btn-light-danger
+	color: $color-danger !important
+	background: #fff
+	&:before 
+		border-color: #fff
+	&:after
+		background-image: url(../img/arrow-danger.svg)
+.btn-light-primary
+	color: $color-primary !important
+	background: #fff
+	&:before 
+		border-color: #fff
+	&:after
+		background-image: url(../img/arrow-primary.svg)
+
+@media (min-width: 1400px)
+	.container
+		max-width: 1350px
+
+.fz-18
+	@media (min-width: 576px)
+		font-size: 18px
+		line-height: 1.22
+	@media (max-width: 575.98px)
+		font-size: 14px
+.fz-14
+	font-size: 14px
+.fz-0
+	font-size: 0
+
+.navbar
+	transition: $transition
+	.navbar-brand
+		max-width: 70%
+		position: relative
+		padding: 0
+		img
+			transition: $transition
+			height: 51px
+			&.logo-white
+				opacity: 0
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+	.navbar-collapse
+		@media (max-width: 991.98px)
+			padding: .5rem 0
+	.nav-link
+		color: inherit
+		&:hover
+			color: $color-warning
+	&.navbar-bg
+		background-color: #fff
+		.navbar-brand
+			img 
+				opacity: 0
+				&.logo-white
+					opacity: 1
+		.nav-link
+			color: $color-body
+	.nav-item
+		&.active .nav-link
+			font-weight: bold
+			@media (max-width: 1199.98px)
+				color: $color-danger
+	@media (min-width: 1200px)
+		padding-top: 29px
+		padding-bottom: 0
+		.navbar-nav
+			position: relative
+			font-size: 17px
+			padding-top: 10px
+			.nav-link
+				padding: 1rem 0
+				position: relative
+		&.navbar-bg
+			padding-top: 0
+			.navbar-brand
+				img
+					height: 42px
+			.navbar-nav
+				font-size: 15px
+				.nav-link
+					padding: 18px 0
+	@media (max-width: 991.98px)
+		background-color: #fff
+		.navbar-brand
+			img
+				height: 42px
+				opacity: 0
+				&.logo-white
+					opacity: 1
+		.nav-link
+			color: $color-body
+
+.navbar-toggler
+	display: inline-block
+	cursor: pointer
+	transition: $transition
+	padding: 0
+	border: 0
+	&:before
+		width: 38px
+		animation-name: sandwich-1
+	span
+		width: 28px
+		animation-name: sandwich-2
+	&:after
+		width: 18px
+		animation-name: sandwich-3
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 8px
+	span, &:before, &:after
+		display: block
+		margin-left: auto
+		transition: $transition
+		transform-origin: right center
+		height: 3px
+		background-color: $color-body
+		margin-left: auto
+		animation-timing-function: linear
+		animation-iteration-count: infinite
+		animation-duration: 3s
+	&:hover
+		opacity: .8
+	&.active
+		&:before
+			transform: rotate(-45deg)
+			width: 32px
+		span
+			width: 0
+			opacity: 0
+		&:after
+			transform: rotate(45deg)
+			width: 32px
+		span, &:before, &:after
+			animation-name: none !important
+@keyframes sandwich-1
+	50%
+		width: 18px
+@keyframes sandwich-2
+	25%
+		width: 23px
+	50%
+		width: 28px
+	75%
+		width: 33px
+@keyframes sandwich-3
+	50%
+		width: 38px
+
+.header-1
+	background-size: cover
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	> .container
+		padding-top: 200px
+		padding-bottom: 100px
+		margin-top: auto
+		margin-bottom: auto
+	.first
+		opacity: 0
+		transition: .5s
+		transform: translateX(20px)
+
+.header-2
+	min-height: 460px
+	@media (max-width: 575.98px)
+		min-height: 400px
+		> .container
+			padding-bottom: 80px
+	
+// .page-footer
+// 	color: $color-footer
+// 	padding: 90px 0 21px
+// 	background-color: #000
+// 	@media (min-width: 768px)
+// 		position: fixed
+// 		bottom: 0
+// 		left: 0
+// 		right: 0
+// 	.row:not(.no-gutters)
+// 		margin-left: -15px
+// 		margin-right: -15px
+// 		> [class*="col"]
+// 			padding-left: 15px
+// 			padding-right: 15px
+// 	ul 
+// 		li 
+// 			padding-bottom: 18px
+// 			a 
+// 				color: inherit
+// 				&:hover 
+// 					color: $color-info
+// 	.footer-bottom
+// 		margin-top: 21px
+// 		padding-top: 28px
+// 		border-top: 1px solid #3a3a3a
+// 		.row:not(.no-gutters)
+// 			margin-left: -11px
+// 			margin-right: -11px
+// 			> [class*="col"]
+// 				padding-left: 11px
+// 				padding-right: 11px
+// 		a:not(:hover)
+// 			color: #fff
+
+// .modal-content
+// 	border: 0
+// 	border-radius: 0
+// 	box-shadow: 0 0 150px 0 rgba(0, 0, 0, 0.13)
+// 	.img
+// 		max-width: 43.25%
+// .modal-header
+// 	border-bottom: 0
+// 	padding-bottom: 0
+// 	@media (min-width: 992px)
+// 		padding: 40px 38px 10px
+// 	.close
+// 		margin-left: auto !important
+// @media (min-width: 992px)
+// 	.modal-body
+// 		padding: 10px 53px 80px
+// 	.modal-lg, .modal-xl
+// 		max-width: 774px
+// .modal-backdrop
+// 	background-color: #fff
+// 	&.show
+// 		opacity: .95
+
+
+
