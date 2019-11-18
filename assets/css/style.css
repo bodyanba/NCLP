@@ -15,7 +15,7 @@
   color: #6cc8bf !important; }
 
 .text-primary {
-  color: #602d91 !important; }
+  color: #000066 !important; }
 
 .text-warning {
   color: #ffc60b !important; }
@@ -39,7 +39,7 @@
   background-color: #6cc8bf !important; }
 
 .bg-primary {
-  background-color: #602d91 !important; }
+  background-color: #000066 !important; }
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
@@ -52,7 +52,7 @@ body {
     bottom: 0;
     left: 0;
     transition: 0.3s;
-    background-color: #ffc60b;
+    background-color: #000066;
     background-image: url(../img/logo-pace.svg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -63,7 +63,7 @@ body {
         background-size: 300px, auto; } }
 
 main {
-  background-color: #000;
+  background-color: #fff;
   position: relative;
   z-index: 2; }
 
@@ -177,7 +177,7 @@ hr {
     background-image: url(../img/arrow-danger.svg); }
 
 .btn-light-primary {
-  color: #602d91 !important;
+  color: #000066 !important;
   background: #fff; }
   .btn-light-primary:before {
     border-color: #fff; }
