@@ -4,7 +4,6 @@ $transition: .3s
 
 body
 	font-family: 'Bai Jamjuree', sans-serif
-	color: $color-body
 
 #preloader
 	content: ''
@@ -76,67 +75,60 @@ hr
 	margin: 0
 
 .btn
-	border-radius: 0
-	padding: 13.5px 28px 13.5px 31px
 	border: none
+	border-radius: 0
+	font-size: 14px
+	font-weight: 600
+	letter-spacing: 1px
 	position: relative
+	margin: 0 16px
+	padding: 14.5px 25px
 	text-transform: uppercase
-	font-weight: bold
 	box-shadow: none !important
-	font-size: 17px
-	span 
-		vertical-align: middle
-	&:before 
+	transition: $transition
+	&:before, &:after
 		content: ''
 		position: absolute
-		top: 0
-		right: 0
-		bottom: 0
-		left: 0
-		border: 1px solid transparent
+		top: 50%
+		border-top: 25px solid transparent
+		border-bottom: 25px solid transparent
+		border-right: 15px solid transparent
 		transition: $transition
-		transform: translate(7px, 7px)
-		z-index: -1
-	&:after 
-		content: ''
-		display: inline-block
-		font-size: 0
-		width: 7px
-		height: 12px
-		background-size: cover
-		margin-left: 22px
-		vertical-align: middle
-		transition: $transition
+	&:before
+		right: 100%
+		transform: translateY(-50%)
+	&:after
+		left: 100%
+		transform: translateY(-50%) rotate(180deg)
 	&:hover 
-		&:before 	
-			transform: none
-		&:after 
-			transform: translateX(-5px)
-	&:active
-		&:after 
-			transform: translateX(5px)
+		background-color: $color-info !important
+		&:before, &:after
+			border-right-color: $color-info
 .btn-danger
-	background: linear-gradient(to right, $color-danger, $color-warning)
-	&:before 
-		border-color: $color-warning
-	&:after
-		background-image: url(../img/arrow-white.svg)
-	&.btn-sm
-		background: $color-danger
-.btn-light-danger
-	color: $color-danger !important
-	background: #fff
-	&:before 
-		border-color: #fff
-	&:after
-		background-image: url(../img/arrow-danger.svg)
-.btn-light-primary
-	color: $color-primary !important
-	background: #fff
-	&:before 
-		border-color: #fff
-	&:after
-		background-image: url(../img/arrow-primary.svg)
+	background-color: $color-danger
+	&:before, &:after
+		border-right-color: $color-danger
+.btn-light
+	background-color: #fff
+	&:before, &:after
+		border-right-color: #fff
+.btn-md
+	font-size: 13px
+	margin: 0 10px
+	padding: 10.5px 20px
+	&:before, &:after
+		border-top-width: 20px
+		border-bottom-width: 20px
+		border-right-width: 10px
+.btn-sm
+	font-size: 12px
+	margin: 0 10px
+	padding: 7px 15px
+	font-weight: normal
+	&:before, &:after
+		border-top-width: 16px
+		border-bottom-width: 16px
+		border-right-width: 10px
 
 @media (min-width: 1400px)
 	.container
@@ -146,15 +138,15 @@ hr
 	font-weight: 600
 	text-transform: capitalize
 .h1, h1
-	@media (min-width: 1200px)
+	@media (min-width: 768px)
 		font-size: 50px
 .h2, h2
 	margin-bottom: 35px
-	@media (min-width: 1200px)
+	@media (min-width: 768px)
 		font-size: 40px
 
 .fz-20
-	@media (min-width: 576px)
+	@media (min-width: 768px)
 		font-size: 20px
 .fz-14
 	font-size: 14px
@@ -400,7 +392,7 @@ hr
 	transition: $transition
 	&:before
 		display: inline-block
-		animation: scroll 2s infinite
+		animation: 2s infinite
 		transform: rotate(-45deg)
 		transition: $transition
 	&:hover 
@@ -425,59 +417,60 @@ hr
 
 .section
 	padding: 90px 0
+	position: relative
+	> .container 
+		position: relative
 
 .section-1
 	color: #fff
 	font-weight: 600
 	text-align: center
-	background: linear-gradient(135deg, $color-primary 30%, $color-danger 100%)
-	.clock-countdown
-		bottom: 0
-		left: 0
-		margin: 40px auto 0
-		position: relative
-		right: 0
-		top: 0
-		.coundown-timer
-			font-size: 30px
-			font-weight: 600
-			text-transform: uppercase
-			text-align: center
-			margin: 0
-			.single-counter
+	overflow: hidden
+	background-color: $color-danger
+	&:before 
+		content: ''
+		position: absolute
+		left: -80%
+		right: -80%
+		top: 50%
+		transform: translateY(-50%)
+		padding-top: 260%
+		background: linear-gradient(135deg, $color-primary 44%, transparent 65%)
+		animation: background 10s linear infinite
+	.countdown
+		font-size: 30px
+		margin: 40px 0 1rem
+		text-transform: uppercase
+		.counter
+			display: inline-block
+			width: 92px
+			margin-bottom: 30px
+			.numb
 				display: inline-block
-				letter-spacing: 5px
-				position: relative
-				width: 92px
-				font-family: "Bai Jamjuree", sans-serif
-				text-align: center
-				margin-bottom: 30px
+				width: 70px
+				height: 70px
+				line-height: 70px
+				margin-bottom: 1rem
+				border: 1px solid rgba(255, 255, 255, 0.25)
+				transform: rotate(45deg)
+				transition: $transition
+				div
+					transform: rotate(-45deg)
+			.normal
+				font-size: 13px
+				letter-spacing: 2px
+				transition: $transition
+				opacity: .33
+			&:hover 
 				.numb
-					line-height: 64px
-					width: 70px
-					height: 70px
-					margin: 0 auto 30px
-					letter-spacing: -1px
-					display: block
-					border: 1px solid rgba(255, 255, 255, 0.25)
-					text-align: center
-					transform: rotate(45deg)
-					transition: $transition
-					div
-						transform: rotate(-45deg)
+					background: $color-danger
+					border-color: $color-danger
 				.normal
-					font-size: 13px
-					font-weight: 600
-					letter-spacing: 2px
-					margin-top: 10px
-					color: rgba(255, 255, 255, 0.33)
-					transition: $transition
-				&:hover 
-					.numb
-						background: $color-danger
-						border-color: $color-danger
-					.normal
-						color: #fff
+					opacity: 1
+
+@keyframes background
+	100%
+		transform: translateY(-50%) rotate(360deg)
 
 // .modal-content
 // 	border: 0

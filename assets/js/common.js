@@ -36,8 +36,8 @@ $(document).ready(function () {
     footer();
   });
 
-  $('.clock-countdown').downCount({
-      date: $('.site-config').attr('data-date'),
+  $('.countdown').downCount({
+      date: $('.countdown').attr('data-date'),
       offset: +10
   }, function () {
       //callback here if finished
