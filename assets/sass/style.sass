@@ -142,17 +142,20 @@ hr
 	.container
 		max-width: 1350px
 
-h1, .h1
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+	font-weight: 600
 	text-transform: capitalize
+.h1, h1
 	@media (min-width: 1200px)
 		font-size: 50px
+.h2, h2
+	margin-bottom: 35px
+	@media (min-width: 1200px)
+		font-size: 40px
 
-.fz-18
+.fz-20
 	@media (min-width: 576px)
-		font-size: 18px
-		line-height: 1.22
-	@media (max-width: 575.98px)
-		font-size: 14px
+		font-size: 20px
 .fz-14
 	font-size: 14px
 .fz-0
@@ -413,13 +416,68 @@ h1, .h1
 	100%
 		opacity: 0
 		transform: rotate(-45deg) translateY(20px)
-
 @keyframes scroll-2
 	0%
 		opacity: 1
 	100%
 		opacity: 0
 		transform: rotate(-45deg) translateY(-20px)
+
+.section
+	padding: 90px 0
+
+.section-1
+	color: #fff
+	font-weight: 600
+	text-align: center
+	background: linear-gradient(135deg, $color-primary 30%, $color-danger 100%)
+	.clock-countdown
+		bottom: 0
+		left: 0
+		margin: 40px auto 0
+		position: relative
+		right: 0
+		top: 0
+		.coundown-timer
+			font-size: 30px
+			font-weight: 600
+			text-transform: uppercase
+			text-align: center
+			margin: 0
+			.single-counter
+				display: inline-block
+				letter-spacing: 5px
+				position: relative
+				width: 92px
+				font-family: "Bai Jamjuree", sans-serif
+				text-align: center
+				margin-bottom: 30px
+				.numb
+					line-height: 64px
+					width: 70px
+					height: 70px
+					margin: 0 auto 30px
+					letter-spacing: -1px
+					display: block
+					border: 1px solid rgba(255, 255, 255, 0.25)
+					text-align: center
+					transform: rotate(45deg)
+					transition: $transition
+					div
+						transform: rotate(-45deg)
+				.normal
+					font-size: 13px
+					font-weight: 600
+					letter-spacing: 2px
+					margin-top: 10px
+					color: rgba(255, 255, 255, 0.33)
+					transition: $transition
+				&:hover 
+					.numb
+						background: $color-danger
+						border-color: $color-danger
+					.normal
+						color: #fff
 
 // .modal-content
 // 	border: 0

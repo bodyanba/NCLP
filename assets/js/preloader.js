@@ -7,7 +7,7 @@ var animData = {
   rendererSettings: {
       progressiveLoad: false
   },
-  path: '../json/nclp_logo.json'
+  path: '../json/preloader.json'
 };
 anim = bodymovin.loadAnimation(animData);
 anim.setSpeed(1);

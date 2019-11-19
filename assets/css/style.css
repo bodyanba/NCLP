@@ -181,19 +181,23 @@ hr {
 @media (min-width: 1400px) {
   .container {
     max-width: 1350px; } }
-h1, .h1 {
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
   text-transform: capitalize; }
+
+@media (min-width: 1200px) {
+  .h1, h1 {
+    font-size: 50px; } }
+
+.h2, h2 {
+  margin-bottom: 35px; }
   @media (min-width: 1200px) {
-    h1, .h1 {
-      font-size: 50px; } }
+    .h2, h2 {
+      font-size: 40px; } }
 
 @media (min-width: 576px) {
-  .fz-18 {
-    font-size: 18px;
-    line-height: 1.22; } }
-@media (max-width: 575.98px) {
-  .fz-18 {
-    font-size: 14px; } }
+  .fz-20 {
+    font-size: 20px; } }
 
 .fz-14 {
   font-size: 14px; }
@@ -450,5 +454,59 @@ h1, .h1 {
   100% {
     opacity: 0;
     transform: rotate(-45deg) translateY(-20px); } }
+.section {
+  padding: 90px 0; }
+
+.section-1 {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(135deg, #000066 30%, #e72732 100%); }
+  .section-1 .clock-countdown {
+    bottom: 0;
+    left: 0;
+    margin: 40px auto 0;
+    position: relative;
+    right: 0;
+    top: 0; }
+    .section-1 .clock-countdown .coundown-timer {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0; }
+      .section-1 .clock-countdown .coundown-timer .single-counter {
+        display: inline-block;
+        letter-spacing: 5px;
+        position: relative;
+        width: 92px;
+        font-family: "Bai Jamjuree", sans-serif;
+        text-align: center;
+        margin-bottom: 30px; }
+        .section-1 .clock-countdown .coundown-timer .single-counter .numb {
+          line-height: 64px;
+          width: 70px;
+          height: 70px;
+          margin: 0 auto 30px;
+          letter-spacing: -1px;
+          display: block;
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          text-align: center;
+          transform: rotate(45deg);
+          transition: 0.3s; }
+          .section-1 .clock-countdown .coundown-timer .single-counter .numb div {
+            transform: rotate(-45deg); }
+        .section-1 .clock-countdown .coundown-timer .single-counter .normal {
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          margin-top: 10px;
+          color: rgba(255, 255, 255, 0.33);
+          transition: 0.3s; }
+        .section-1 .clock-countdown .coundown-timer .single-counter:hover .numb {
+          background: #e72732;
+          border-color: #e72732; }
+        .section-1 .clock-countdown .coundown-timer .single-counter:hover .normal {
+          color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

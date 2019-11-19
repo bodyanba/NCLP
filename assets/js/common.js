@@ -36,4 +36,12 @@ $(document).ready(function () {
     footer();
   });
 
+  $('.clock-countdown').downCount({
+      date: $('.site-config').attr('data-date'),
+      offset: +10
+  }, function () {
+      //callback here if finished
+      //alert('YES, done!');
+  });
+
 });
