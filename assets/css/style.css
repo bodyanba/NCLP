@@ -44,23 +44,22 @@
 body {
   font-family: "Bai Jamjuree", sans-serif;
   color: #11112e; }
-  body:before {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s;
-    background-color: #000066;
-    background-image: url(../img/logo-pace.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 300px, auto;
-    z-index: 9999; }
+
+#preloader {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+  background-color: #000066;
+  z-index: 9999; }
+  #preloader svg {
+    width: 300px !important; }
     @media (max-width: 991.98px) {
-      body:before {
-        background-size: 300px, auto; } }
+      #preloader svg {
+        width: 200px !important; } }
 
 main {
   background-color: #fff;
@@ -73,15 +72,15 @@ main {
   visibility: hidden;
   transition: 0.3s; }
 
-.pace-done:before {
+.pace-done #preloader {
   opacity: 0;
   visibility: hidden; }
 .pace-done .pace-container {
   opacity: 1;
   visibility: visible; }
-.pace-done .first, .pace-done .second {
-  opacity: 1;
-  transform: none; }
+.pace-done .heading {
+  opacity: 1 !important;
+  transform: none !important; }
 
 .pace {
   pointer-events: none;
@@ -96,12 +95,6 @@ main {
     border-top: 3px solid #fff;
     z-index: 99999; }
 
-@font-face {
-  font-family: "Droid Arabic Kufi";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/DroidKufi-Regular.eot);
-  src: url(../fonts/DroidKufi-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/DroidKufi-Regular.woff2) format("woff2"), url(../fonts/DroidKufi-Regular.woff) format("woff"), url(../fonts/DroidKufi-Regular.ttf) format("truetype"); }
 * {
   outline: none !important; }
 
@@ -110,10 +103,10 @@ img {
   height: auto; }
 
 a {
-  color: #6cc8bf;
+  color: #000066;
   transition: 0.3s; }
   a:hover {
-    color: #e93e1b;
+    color: #e72732;
     text-decoration: none; }
 
 hr {
@@ -160,16 +153,16 @@ hr {
     transform: translateX(5px); }
 
 .btn-danger {
-  background: linear-gradient(to right, #e93e1b, #ffc60b); }
+  background: linear-gradient(to right, #e72732, #ffc60b); }
   .btn-danger:before {
     border-color: #ffc60b; }
   .btn-danger:after {
     background-image: url(../img/arrow-white.svg); }
   .btn-danger.btn-sm {
-    background: #e93e1b; }
+    background: #e72732; }
 
 .btn-light-danger {
-  color: #e93e1b !important;
+  color: #e72732 !important;
   background: #fff; }
   .btn-light-danger:before {
     border-color: #fff; }
@@ -187,6 +180,12 @@ hr {
 @media (min-width: 1400px) {
   .container {
     max-width: 1350px; } }
+h1, .h1 {
+  text-transform: capitalize; }
+  @media (min-width: 1200px) {
+    h1, .h1 {
+      font-size: 50px; } }
+
 @media (min-width: 576px) {
   .fz-18 {
     font-size: 18px;
@@ -236,7 +235,7 @@ hr {
     font-weight: bold; }
     @media (max-width: 1199.98px) {
       .navbar .nav-item.active .nav-link {
-        color: #e93e1b; } }
+        color: #e72732; } }
   @media (min-width: 1200px) {
     .navbar {
       padding-top: 29px;
@@ -328,23 +327,127 @@ hr {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  z-index: 2; }
+  .header-1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #000066, rgba(255, 255, 255, 0.1)); }
   .header-1 > .container {
     padding-top: 200px;
     padding-bottom: 100px;
     margin-top: auto;
-    margin-bottom: auto; }
-  .header-1 .first {
+    margin-bottom: auto;
+    position: relative; }
+  .header-1 .heading {
     opacity: 0;
     transition: 0.5s;
-    transform: translateX(20px); }
+    transform: translateY(20px); }
+  .header-1 .scroll-down-icon:before {
+    animation-name: scroll-1;
+    margin-top: 8px;
+    margin-left: 8px; }
 
-.header-2 {
-  min-height: 460px; }
-  @media (max-width: 575.98px) {
-    .header-2 {
-      min-height: 400px; }
-      .header-2 > .container {
-        padding-bottom: 80px; } }
+.page-footer {
+  color: #fff;
+  font-size: 13px;
+  padding: 60px 0;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #000066; }
+  @media (min-width: 768px) {
+    .page-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0; } }
+  .page-footer p {
+    opacity: 0.5; }
+  .page-footer ul {
+    list-style: none;
+    padding-left: 0; }
+    .page-footer ul li {
+      display: inline-block; }
+    @media (min-width: 768px) {
+      .page-footer ul.footer-links li + li:before {
+        content: "|";
+        margin: 0 15px 0 10px;
+        opacity: 0.1; } }
+    @media (max-width: 767.98px) {
+      .page-footer ul.footer-links li {
+        padding-left: 7px;
+        padding-right: 7px; } }
+    .page-footer ul.footer-links li a:not(:hover) {
+      color: inherit; }
+    .page-footer ul.social-icons {
+      padding-top: 0.5rem;
+      margin-bottom: 0; }
+      .page-footer ul.social-icons li a {
+        color: inherit;
+        font-size: 1rem;
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 5px;
+        transform: rotate(45deg); }
+        .page-footer ul.social-icons li a:before {
+          display: inline-block;
+          transform: rotate(-45deg); }
+        .page-footer ul.social-icons li a:hover {
+          background-color: #e72732; }
+  .page-footer .scroll-down-icon:before {
+    animation-name: scroll-2;
+    margin-top: 18px;
+    margin-left: 18px; }
+
+.scroll-down-icon {
+  font-size: 1rem;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff !important;
+  transform: rotate(45deg);
+  transition: 0.3s; }
+  .scroll-down-icon:before {
+    display: inline-block;
+    animation: scroll 2s infinite;
+    transform: rotate(-45deg);
+    transition: 0.3s; }
+  .scroll-down-icon:hover {
+    background-color: #e72732; }
+    .scroll-down-icon:hover:before {
+      margin-top: 14px;
+      margin-left: 14px;
+      animation: inherit; }
+
+@keyframes scroll-1 {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(-45deg) translateY(20px); } }
+@keyframes scroll-2 {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(-45deg) translateY(-20px); } }
 
 /*# sourceMappingURL=style.css.map */
