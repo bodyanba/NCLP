@@ -352,7 +352,7 @@ h1, .h1 {
     opacity: 0;
     transition: 0.5s;
     transform: translateY(20px); }
-  .header-1 .scroll-down-icon:before {
+  .header-1 .scroll-to:before {
     animation-name: scroll-1;
     margin-top: 8px;
     margin-left: 8px; }
@@ -408,12 +408,12 @@ h1, .h1 {
           transform: rotate(-45deg); }
         .page-footer ul.social-icons li a:hover {
           background-color: #e72732; }
-  .page-footer .scroll-down-icon:before {
+  .page-footer .scroll-to:before {
     animation-name: scroll-2;
     margin-top: 18px;
     margin-left: 18px; }
 
-.scroll-down-icon {
+.scroll-to {
   font-size: 1rem;
   width: 70px;
   height: 70px;
@@ -426,14 +426,14 @@ h1, .h1 {
   color: #fff !important;
   transform: rotate(45deg);
   transition: 0.3s; }
-  .scroll-down-icon:before {
+  .scroll-to:before {
     display: inline-block;
     animation: scroll 2s infinite;
     transform: rotate(-45deg);
     transition: 0.3s; }
-  .scroll-down-icon:hover {
+  .scroll-to:hover {
     background-color: #e72732; }
-    .scroll-down-icon:hover:before {
+    .scroll-to:hover:before {
       margin-top: 14px;
       margin-left: 14px;
       animation: inherit; }
