@@ -141,28 +141,41 @@ hr {
   .container {
     max-width: 1350px; } }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
   text-transform: capitalize; }
+  .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-weight: 600; }
 
-@media (min-width: 768px) {
-  .h1, h1 {
-    font-size: 50px; } }
+.h1, h1 {
+  font-weight: 600; }
+  @media (min-width: 768px) {
+    .h1, h1 {
+      font-size: 50px; } }
 
 .h2, h2 {
+  font-weight: 300;
   margin-bottom: 35px; }
   @media (min-width: 768px) {
     .h2, h2 {
       font-size: 40px; } }
 
+.fz-26 {
+  font-size: 20px; }
+  @media (min-width: 768px) {
+    .fz-26 {
+      font-size: 26px; } }
+
 @media (min-width: 768px) {
   .fz-20 {
     font-size: 20px; } }
 
-.fz-14 {
-  font-size: 14px; }
+.fz-13 {
+  font-size: 13px; }
 
 .fz-0 {
   font-size: 0; }
+
+.ls-1 {
+  letter-spacing: 1px; }
 
 .navbar {
   transition: 0.3s; }
@@ -320,6 +333,18 @@ hr {
     margin-top: 8px;
     margin-left: 8px; }
 
+.header-2 {
+  min-height: 460px;
+  background-color: #000066; }
+  @media (max-width: 575.98px) {
+    .header-2 {
+      min-height: 400px; }
+      .header-2 > .container {
+        padding-bottom: 80px; } }
+  .header-2 .h2, .header-2 h2 {
+    margin-bottom: 0;
+    text-transform: uppercase; }
+
 .page-footer {
   color: #fff;
   font-size: 13px;
@@ -468,5 +493,41 @@ hr {
 @keyframes background {
   100% {
     transform: translateY(-50%) rotate(360deg); } }
+.section-2 {
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .section-2 {
+      padding: 150px 0; } }
+
+.section-3 {
+  overflow: hidden; }
+
+.section-4 img {
+  max-width: 150px;
+  max-height: 50px; }
+
+.service {
+  color: #fff;
+  padding: 85px 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #000066;
+  transition: 0.3s;
+  height: 100%; }
+  .service .numb {
+    color: #e72732;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0 auto 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: initial;
+    transition: 0.3s;
+    transform: rotate(45deg); }
+    .service .numb div {
+      transform: rotate(-45deg); }
+  .service:hover {
+    background-color: #e72732; }
 
 /*# sourceMappingURL=style.css.map */
