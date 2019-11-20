@@ -248,9 +248,12 @@ a
 				transition: $transition
 				@media (max-width: 991.98px)
 					left: 0
-			&:hover 
+			&:hover, &.active
 				&:after
 					width: 20px
+			&.active 
+				color: $color-danger
+				pointer-events: none
 	.navbar-nav
 		padding-bottom: .5rem
 		@media (min-width: 992px)
@@ -362,8 +365,9 @@ a
 	overflow: hidden
 	text-align: center
 	color: #fff
+	background-color: $color-primary
 	z-index: 2
-	&:before 
+	&:not(.header-2):before 
 		content: ''
 		position: absolute
 		top: 0
@@ -391,11 +395,6 @@ a
 
 .header-2
 	min-height: 460px
-	background-color: $color-primary
-	@media (max-width: 575.98px)
-		min-height: 400px
-		> .container
-			padding-bottom: 80px
 	.h2, h2
 		margin-bottom: 0
 		text-transform: uppercase
