@@ -54,13 +54,9 @@ $(document).ready(function () {
 	function easyParallax() {
 		scrollPos = $(this).scrollTop();
 		$('.header-1 .container').css({
-				'top': (scrollPos / 4) + "px",
-				'opacity': 1 - (scrollPos / 250)
+			'top': (scrollPos / 4) + "px",
+			'opacity': 1 - (scrollPos / 250)
 		});
-		// $('.page-header.parallax-section .container').css({
-		// 		'top': (scrollPos/4)+"px",
-		// 		'opacity': 1-(scrollPos/120)
-		// });
 	};
 	$(window).on("scroll", easyParallax);
 
