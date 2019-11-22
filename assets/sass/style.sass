@@ -1070,39 +1070,52 @@ a
 
 
 
-.section-5 
-	color: $color-body
-	padding-bottom: 120px
 
-.section-6 
-	color: $color-body
+
+.section-6
 	padding-top: 120px
-	background: linear-gradient(to bottom, #f0f1f2 0%, #fff 100%)
+	text-align: center
+	background: $radial-gradient
 	.ali 
 		margin-top: -170px
 
 .section-7
-	color: $color-body	
-	.objective
-		.objective-icon
-			width: 64px
-			height: 64px
-			transform: rotate(45deg)
-			margin: 0 auto 30px
-			background: #e0e1e2
-			overflow: hidden
-			transition: $transition
-			span 
-				transform: rotate(-45deg)
-				font-size: 50px
-				line-height: 50px
-				color: #fff
-				margin-left: 12px
-				display: block
-				font-weight: 700
-		&:hover
-			.objective-icon 
-				background: $color-danger
+	color: #fff
+	text-align: center
+	background-color: $color-primary
+	@media (min-width: 768px)
+		padding: 120px 0
+
+.objective
+	padding-bottom: 1.5rem
+	@media (min-width: 1200px)
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+	.objective-icon
+		color: #fff
+		font-size: 50px
+		font-weight: 600
+		line-height: 50px
+		width: 64px
+		height: 64px
+		display: inline-block
+		margin-bottom: 30px
+		background: #e0e1e2
+		overflow: hidden
+		transform: rotate(45deg)
+		transition: $transition
+		div 
+			margin-left: 15px
+			transform: rotate(-45deg)
+	&:hover
+		.objective-icon 
+			background: $color-danger
+
+
+
+
+
+
 
 .nav-faq 
 	border-bottom: none
