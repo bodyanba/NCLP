@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="The National Collaborative Leadership Program">
 		<meta name="author" content="The National Collaborative Leadership Program">
-		<link rel="shortcut icon" href="https://nclp.om/images/favicon.png">
+		<link rel="shortcut icon" href="../assets/img/favicon.png">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -23,11 +23,62 @@
 
 		<div class="pace-container" id="content">
 
+			<nav class="navbar-expand-lg fixed-top">
+				<div class="navbar navbar-top">
+					<div class="container">
+						<a href="contact.html" class="contact-link">Contact Us</a>
+						<div class="dropdown fz-0">
+							<a href="#!" class="ti-world" data-toggle="dropdown"><i class="ti-angle-down"></i></a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a href="#!" class="dropdown-item">English</a>
+								<a href="#!" class="dropdown-item">عربي</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar navbar-bottom">
+					<div class="container">
+						<a class="navbar-brand" href="index.html">
+							<img src="../assets/img/logo-white.svg" alt="">
+							<img src="../assets/img/logo.svg" alt="" class="logo-color">
+						</a>
+						<a href="#!" class="navbar-toggler">
+							<span></span>
+						</a>
+						<div class="navbar-collapse" id="navbar">
+							<ul class="navbar-nav mx-auto">
+								<li class="nav-item">
+									<a href="about.html" class="nav-link">About</a>
+								</li>
+								<li class="nav-item">
+									<a href="program.html" class="nav-link">Program</a>
+								</li>
+								<li class="nav-item">
+									<a href="admission.html" class="nav-link">Admission</a>
+								</li>
+								<li class="nav-item">
+									<a href="calendar.html" class="nav-link">Calendar</a>
+								</li>
+								<li class="nav-item">
+									<a href="community.html" class="nav-link active">Community</a>
+								</li>
+								<li class="nav-item">
+									<a href="faq.html" class="nav-link">FAQ</a>
+								</li>
+							</ul>
+							<a href="https://apply.nclp.om" class="btn btn-danger btn-sm"><i class="ti-pencil-alt mr-1"></i> Apply Now</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+
 			<header class="header-1 header-2">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-xl-9">
-							<h2 class="heading">Frequently Asked <span class="text-danger">Questions</span></h2>
+							<h2 class="o-hidden">
+								<div class="heading">Frequently Asked <span class="text-danger">Questions</span></div>
+							</h2>
 						</div>
 					</div>
 				</div>
@@ -36,138 +87,421 @@
 
 			<main id="sections">
 
-				<section class="section section-8">
+				<section class="section fz-20">
 					<div class="container">
-						<nav>
-						  <ul class="nav nav-tabs text-center nav-faq">
-						    <li class="nav-item col mb-4"><a class="nav-link active" id="nav-faq1-tab" data-toggle="tab" href="#nav-faq1">
-										<div class="tab-img">
-											<img src="../assets/img/faq1.png" alt="" class="hov">
-											<img src="../assets/img/faq2.png" alt="" class="act">
+
+						<ul class="nav nav-4">
+							<li>
+								<a data-toggle="pill" href="#t1" class="active">
+									<div class="tab-img">
+										<img src="../assets/img/faq1.png" alt="" class="hov">
+										<img src="../assets/img/faq2.png" alt="" class="act">
+									</div>
+									<div>General</div>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="pill" href="#t2">
+									<div class="tab-img">
+										<img src="../assets/img/faq3.png" alt="" class="hov">
+										<img src="../assets/img/faq4.png" alt="" class="act">
+									</div>
+									<div>Applying / Admission</div>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="pill" href="#t3">
+									<div class="tab-img">
+										<img src="../assets/img/faq5.png" alt="" class="hov">
+										<img src="../assets/img/faq6.png" alt="" class="act">
+									</div>
+									<div>The Learning Journey</div>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="pill" href="#t4">
+									<div class="tab-img">
+										<img src="../assets/img/faq7.png" alt="" class="hov">
+										<img src="../assets/img/faq8.png" alt="" class="act">
+									</div>
+									<div>Overseas Modules</div>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="pill" href="#t5">
+									<div class="tab-img">
+										<img src="../assets/img/faq9.png" alt="" class="hov">
+										<img src="../assets/img/faq10.png" alt="" class="act">
+									</div>
+									<div>After the Program</div>
+								</a>
+							</li>
+						</ul>
+
+						<div class="row justify-content-center">
+							<div class="col-xl-11">
+								<div class="tab-content">
+
+									<div class="tab-pane fade show active" id="t1">
+										<h3 class="text-center">General</h3>
+
+										<div class="accordion" id="accordion-1">
+											<div class="item">
+												<a data-toggle="collapse" href="#a-1-1" aria-expanded="true">
+													<span>What is the NCLP’s vision?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-1-1" data-parent="#accordion-1" class="collapse show">
+													<p>Building Public - Private Collaborative Leaders for Oman.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-1-2">
+													<span>What elements of the National Agenda does NCLP address?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-1-2" data-parent="#accordion-1" class="collapse">
+													<p>The program recognizes the importance of effective public sector and private sector collaboration for the future growth and performance of Oman’s economy. As such, this program is designed to build a community of Public-Private Collaborative Leaders, based on trusted and trusting relationships.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-1-3">
+													<span>What are the participant fees for the NCLP?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-1-3" data-parent="#accordion-1" class="collapse">
+													<p>The NCLP is an investment by the Diwan of Royal Court. The Diwan of Royal Court sponsors all tuition fees, learning materials and administration, as well as appropriate travel and accommodation costs for modules taking place overseas. Participants attending the program from outside of Muscat will need to cover travel and accommodation costs for modules taking place in Muscat.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-1-4">
+													<span>How can I enquire about the NCLP?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-1-4" data-parent="#accordion-1" class="collapse">
+													<p>The best starting point is a careful review of the NCLP website which contains all of the information required to make a decision about your application. If you have other enquiries, please email the National Programs Team on <a href="mailto:support@nclp.om">support@nclp.om</a></p>
+												</div>
+											</div>
 										</div>
-										<span>General</span>
-						    	</a>
-						    </li>
-						    <li class="nav-item col mb-4"><a class="nav-link" id="nav-faq2-tab" data-toggle="tab" href="#nav-faq2">
-							    	<div class="tab-img">
-											<img src="../assets/img/faq3.png" alt="" class="hov">
-											<img src="../assets/img/faq4.png" alt="" class="act">
+
+									</div>
+
+									<div class="tab-pane fade" id="t2">
+										<h3 class="text-center">Applying / Admission</h3>
+
+										<div class="accordion" id="accordion-2">
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-1" aria-expanded="true">
+													<span>How many places will be available for the NCLP 2019 intake?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-1" data-parent="#accordion-2" class="collapse show">
+													<p>With a total cohort size of 40 participants, the 2019 NCLP intake will comprise 20 private sector senior leaders and 20 public sector senior leaders.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-2">
+													<span>How do I apply for the NCLP?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-2" data-parent="#accordion-2" class="collapse">
+													<p>Eligible applicants interested in the National Collaborative and Leadership Program can only apply via the <a href="https://apply.nclp.om">online application form</a> during the application period which will be open from midnight, 6th Nov and close midnight, 17th Nov, 2019 Submissions will only be accepted with the online application form.  Applications received after the 17th November will not be considered.</p>
+													<p>Please refer to the website <a href="http://nclp.om/">www.nclp.om</a> for more information about the application process.</p>
+													<p>Please review the complete <a href="admission.html#methodology">Application Process</a> under the Admission tab. This gives a detailed comprehensive description of the selection process as well as the applicant profile. Please make sure you read this section extremely carefully if you are intending to apply. It provides all the information you require.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-3">
+													<span>How long does the online application form take to complete?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-3" data-parent="#accordion-2" class="collapse">
+													<p>The application form should take approximately 45-90 minutes to complete, providing you have scanned copies of all the required documentation (including your cv, letter of support etc.). Once the applicant has started the form,  he/she has the option to save the  application and return to complete it at a later date, as long as it is still within the online application period. An email will be sent to the applicant with their application number so they can access the application again.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-4">
+													<span>What language does the application need to be completed in?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-4" data-parent="#accordion-2" class="collapse">
+													<p>English</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-5">
+													<span>Is the NCLP looking for participants from specific government entities or sectors of the economy?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-5" data-parent="#accordion-2" class="collapse">
+													<p>The NCLP vision is to build a community of public - private collaborative leaders. This means we are selecting against the characteristics of a collaborative leader rather than against a specific public or private sector profile. We encourage and welcome applicants from across the strategic sectors, across government entities, and across the Governorates of the Sultanate.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-6">
+													<span>Are Omanis living overseas eligible to apply?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-6" data-parent="#accordion-2" class="collapse">
+													<p>The Program is open for Omani nationals living in the Sultanate and overseas. The program requires a considerable time commitment and the participant is expected to attend all program modules and intermodular sessions as well as work extensively on Group Projects in their own time.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-7">
+													<span>Are any selection criteria used to rule out applicants?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-7" data-parent="#accordion-2" class="collapse">
+													<p>NCLP automatically rules out non-Omani applicants, applicants who are not fluent in English, applicants with less than  10 years of experience, applicants who are younger than 32 years of age, and applicants who have an immediate family member who is, or has been, a participant on the program.</p>
+													<p>Please visit the <a href="admission.html#apply">Who Should Apply?</a> section under Apply for a complete list of the admission criteria.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-8">
+													<span>Do I need to be proficient in written and spoken English to apply?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-8" data-parent="#accordion-2" class="collapse">
+													<p>Yes, because the program will be delivered in English.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-9">
+													<span>What if I am not available for the online test and Assessment Centre dates?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-9" data-parent="#accordion-2" class="collapse">
+													<p>The dates for the Assessment Centres and Expert Panel interviews are highlighted in the <a href="calendar.html">Program Calendar</a> section of this website. If you are invited to the interviews stage, please ensure you are available in Muscat (or able to travel to Muscat) throughout those dates as, due to high demand, we are unable to reschedule.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-10">
+													<span>How do I find out about the status of my Application?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-10" data-parent="#accordion-2" class="collapse">
+													<p>Once applicants start the process, they can check the status of their application at any time by entering their personal number in the Application Tracking field on the following website: <a href="https://apply.nclp.om/">apply.nclp.om</a></p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-11">
+													<span>When will applicants be informed of their successful application to the NCLP?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-11" data-parent="#accordion-2" class="collapse">
+													<p>Successful applicants will be notified by the 9th February, 2020.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-2-12">
+													<span>What if a qualified participant is not accepted onto the Program?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-2-12" data-parent="#accordion-2" class="collapse">
+													<p>Selection for the NCLP is highly competitive as places are limited. The National Programs Team encourages applicants who have not been successful to learn from the experience and to use this to grow and develop their capabilities for the future.</p>
+												</div>
+											</div>
 										</div>
-										<span>Applying / Admission</span></a>
-						    </li>
-						    <li class="nav-item col mb-4"><a class="nav-link" id="nav-faq3-tab" data-toggle="tab" href="#nav-faq3">
-							    	<div class="tab-img">
-											<img src="../assets/img/faq5.png" alt="" class="hov">
-											<img src="../assets/img/faq6.png" alt="" class="act">
+
+									</div>
+
+									<div class="tab-pane fade" id="t3">
+										<h3 class="text-center">The Learning Journey</h3>
+
+										<div class="accordion" id="accordion-3">
+											<div class="item">
+												<a data-toggle="collapse" href="#a-3-1" aria-expanded="true">
+													<span>Can the NCLP be completed effectively while in a full time job?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-3-1" data-parent="#accordion-3" class="collapse show">
+													<p>The NCLP learning journey is module-based and can be completed while participants continue to work in their current role. However, participants are required to allocate time away from the office throughout the ten months of the Program. This includes a total of 23 module days (in Muscat and overseas) with extra days allocated for travel on either side of modules. In addition, participants will be expected to dedicate approximately 20 days away from the office for project work.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-3-2">
+													<span>How much preparation time is required for the modules or during the inter-modular phases?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-3-2" data-parent="#accordion-3" class="collapse">
+													<p>Approximately four weeks before each module, you will receive preparation reading and potentially a questionnaire to complete. <b>This must be completed ahead of the module.</b> Additionally, during the three inter-modular phases, you will be required to work in groups to progress your projects. It should be noted that project work will require approximately 20 days away from the office.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-3-3">
+													<span>How are the 20 days of project work scheduled?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-3-3" data-parent="#accordion-3" class="collapse">
+													<p>The project groups are responsible for scheduling these days themselves with business coaches.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-3-4">
+													<span>Do I have to attend all modules and inter-modular activities?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-3-4" data-parent="#accordion-3" class="collapse">
+													<p>Participation in the NCLP represents a significant investment of time from individuals and their organisations. Once accepted, participants will need to sign a Commitment Letter indicating their understanding and acceptance of the Program schedule and the required course work. Participants unable to dedicate themselves to the entire Program* for any reason will be released from the Program.</p>
+													<p>*Please refer to the <a href="calendar.html">Program Calendar</a> for the complete schedule of program modules and timeline.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-3-5">
+													<span>Where will the Oman based modules take place?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-3-5" data-parent="#accordion-3" class="collapse">
+													<p>Oman based modules will normally take place at Al Wahat Club in Muscat.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-3-6">
+													<span>Can family members travel with me to the out-of-Muscat sessions?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-3-6" data-parent="#accordion-3" class="collapse">
+													<p>We do not allow family members of participants to accompany them during the out-of-Muscat sessions in Cambridge Module 2. This stipulation also applies to modules that take place overseas (Modules 4).</p>
+												</div>
+											</div>
 										</div>
-										<span>The Learning Journey</span></a>
-						    </li>
-						    <li class="nav-item col mb-4"><a class="nav-link" id="nav-faq4-tab" data-toggle="tab" href="#nav-faq4">
-						    		<div class="tab-img">
-											<img src="../assets/img/faq7.png" alt="" class="hov">
-											<img src="../assets/img/faq8.png" alt="" class="act">
+
+									</div>
+
+									<div class="tab-pane fade" id="t4">
+										<h3 class="text-center">Overseas Modules</h3>
+
+										<div class="accordion" id="accordion-4">
+											<div class="item">
+												<a data-toggle="collapse" href="#a-4-1" aria-expanded="true">
+													<span>How many days of travel should I expect?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-4-1" data-parent="#accordion-4" class="collapse show">
+													<p>Two modules (Leadership Module 2 & Site Visit Module 4) will take place overseas. Participants are expected to arrive at the module’s destination at least the evening prior to the commencement of the module. Bearing this in mind, at least one day’s travel either side of these modules should be allowed.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-4-2">
+													<span>Will participants be required to apply for overseas visas?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-4-2" data-parent="#accordion-4" class="collapse">
+													<p>Participants will be responsible for obtaining their own visas for their international modules. This should be done well ahead of their travel schedule. The Diwan of Royal Court will support the visa application by providing the required documents relevant to the program (e.g. proof of acceptance). The Diwan of Royal Court will also cover visa costs.</p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-4-3">
+													<span>Can family members travel with me to the overseas modules?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-4-3" data-parent="#accordion-4" class="collapse">
+													<p>The Leadership & Application Module (Modules 2 & 4), both of which take place in the international environment, means that participants need to be completely committed to the learning and not subject to any distractions. As a result, we do not allow family members of participants to accompany them during out-of-country modules.</p>
+												</div>
+											</div>
 										</div>
-										<span>Overseas Modules</span></a>
-						    </li>
-						    <li class="nav-item col mb-4"><a class="nav-link" id="nav-faq5-tab" data-toggle="tab" href="#nav-faq5">
-						    		<div class="tab-img">
-											<img src="../assets/img/faq9.png" alt="" class="hov">
-											<img src="../assets/img/faq10.png" alt="" class="act">
+
+									</div>
+
+									<div class="tab-pane fade" id="t5">
+										<h3 class="text-center">After the Program</h3>
+
+										<div class="accordion" id="accordion-5">
+											<div class="item">
+												<a data-toggle="collapse" href="#a-5-1" aria-expanded="true">
+													<span>What comes after the NCLP?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-5-1" data-parent="#accordion-5" class="collapse show">
+													<p>Successful graduates from the NCLP will be admitted to membership of the Oman Business Forum (OBF). This exclusive community of leaders is dedicated to fostering collaboration between public and private sectors as well as facilitating and enhancing the sharing of ideas, knowledge and best practice between the two groups.</p>
+													<p>For further information, please visit <a href="https://www.obf.om" target="_blank">www.obf.om</a></p>
+												</div>
+											</div>
+											<div class="item">
+												<a data-toggle="collapse" href="#a-5-2">
+													<span>Does graduation from the NCLP guarantee a promotion within the participant’s organisation?</span>
+													<i class="ti-close"></i>
+												</a>
+												<div id="a-5-2" data-parent="#accordion-5" class="collapse">
+													<p>Graduation from the NCLP does not guarantee any future promotion whether in the public or the private sectors. The Program aims to build world-class Omani collaborative leaders capable of driving growth and development in the economy. The NCLP is not involved in any recruitment activities.</p>
+												</div>
+											</div>
 										</div>
-										<span>After the Program</span></a>
-						    </li>
-						  </ul>
-						</nav>
-						
-						<div class="tab-content">
-						  <div class="tab-pane fade show active" id="nav-faq1">
-								
-								<div class="fz-30 mb-4 text-center font-weight-bold">General</div>
-								<div class="accordion accordion-1 fz-20" id="accordionExample">
-								  <div class="card">
-								    <div class="card-header px-0 py-3" id="headingOne">
-								      <h5 class="mb-0">
-								        <a class="btn-link d-flex col" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-								        	<span class="mr-auto">What is the NCLP’s vision?</span>
-								        	<div class="ml-2">
-								        		<span class="toggle-icon mx-2 d-flex align-items-center justify-content-center"><i class="ti-close"></i></span>
-								        	</div>
-								        </a>
-								      </h5>
-								    </div>
-								    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-								      <div class="card-body px-0">Building Public - Private Collaborative Leaders for Oman.
-								      </div>
-								    </div>
-								  </div>
-								  <div class="card">
-								    <div class="card-header px-0 py-3" id="headingTwo">
-								      <h5 class="mb-0">
-								        <a class="btn-link d-flex col" data-toggle="collapse" href="#collapseTwo">
-								        	<span class="mr-auto">What elements of the National Agenda does NCLP address?</span>
-								        	<div class="ml-2">
-								        		<span class="toggle-icon mx-2 d-flex align-items-center justify-content-center"><i class="ti-close"></i></span>
-								        	</div>
-								        </a>
-								      </h5>
-								    </div>
-								    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-								      <div class="card-body px-0">The program recognizes the importance of effective public sector and private sector collaboration for the future growth and performance of Oman’s economy. As such, this program is designed to build a community of Public-Private Collaborative Leaders, based on trusted and trusting relationships.
-								      </div>
-								    </div>
-								  </div>
-								  <div class="card">
-								    <div class="card-header px-0 py-3" id="headingThree">
-								      <h5 class="mb-0">
-								        <a class="btn-link d-flex col" data-toggle="collapse" href="#collapseThree">
-								        	<span class="mr-auto">What are the participant fees for the NCLP?</span>
-								        	<div class="ml-2">
-								        		<span class="toggle-icon mx-2 d-flex align-items-center justify-content-center"><i class="ti-close"></i></span>
-								        	</div>
-								        </a>
-								      </h5>
-								    </div>
-								    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-								      <div class="card-body px-0">The NCLP is an investment by the Diwan of Royal Court. The Diwan of Royal Court sponsors all tuition fees, learning materials and administration, as well as appropriate travel and accommodation costs for modules taking place overseas. Participants attending the program from outside of Muscat will need to cover travel and accommodation costs for modules taking place in Muscat.
-								      </div>
-								    </div>
-								  </div>
-								  <div class="card">
-								    <div class="card-header px-0 py-3" id="headingFour">
-								      <h5 class="mb-0">
-								        <a class="btn-link d-flex col" data-toggle="collapse" href="#collapseFour">
-								        	<span class="mr-auto">How can I enquire about the NCLP?</span>
-								        	<div class="ml-2">
-								        		<span class="toggle-icon mx-2 d-flex align-items-center justify-content-center"><i class="ti-close"></i></span>
-								        	</div>
-								        </a>
-								      </h5>
-								    </div>
-								    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-								      <div class="card-body px-0">The best starting point is a careful review of the NCLP website which contains all of the information required to make a decision about your application. If you have other enquiries, please email the National Programs Team on <a href="mailto:support@nclp.om" class="accord-a">support@nclp.om</a>
-								      </div>
-								    </div>
-								  </div>
+
+									</div>
+
 								</div>
+							</div>
+						</div>
 
+					</div>
+				</section>
 
-
-
-
-
-
-
-
-						  </div>
-						  <div class="tab-pane fade" id="nav-faq2">...</div>
-						  <div class="tab-pane fade" id="nav-faq3">...</div>
-						  <div class="tab-pane fade" id="nav-faq4">...</div>
-						  <div class="tab-pane fade" id="nav-faq5">...</div>
+				<section class="section section-1 fz-20">
+					<div class="container">
+						<h2 class="o-hidden">
+							<div data-aos="fade-up"><span>Applications are now Open</span></div>
+						</h2>
+						<div class="o-hidden">
+							<p data-aos="fade-up">Days until applications close</p>
+						</div>
+						<div class="o-hidden">
+							<div class="countdown" data-date="11/30/2019 23:59:59" data-date-timezone="+0" data-aos="fade-up">
+								<div class="counter">
+									<div class="numb"><div class="days">14</div></div>
+									<span class="normal">Days</span>
+								</div>
+								<div class="counter">
+									<div class="numb"><div class="hours">15</div></div>
+									<span class="normal">Hours</span>
+								</div>
+								<div class="counter">
+									<div class="numb"><div class="minutes">45</div></div>
+									<span class="normal">Minutes</span>
+								</div>
+								<div class="counter">
+									<div class="numb"><div class="seconds">21</div></div>
+									<span class="normal">Seconds</span>
+								</div>
+							</div>
+						</div>
+						<div class="o-hidden">
+							<a href="https://apply.nclp.om" class="btn btn-light"><i class="ti-pencil-alt mr-1"></i> Apply Now</a>
 						</div>
 					</div>
 				</section>
 
 			</main>
+
+			<footer class="footer-wrapper">
+				<div class="page-footer">
+					<div class="container">
+						<a href="index.html" class="d-inline-block mb-4"><img src="../assets/img/logo-white.svg" alt="" width="480"></a>
+						<p>PO Box 237, PC 103, Bareeq Shati, Muscat, Sultanate of Oman</p>
+						<ul class="footer-links">
+							<li><a href="index.html">home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="program.html">Program</a></li>
+							<li><a href="admission.html">Admission</a></li>
+							<li><a href="calendar.html">Calendar</a></li>
+							<li><a href="community.html">Community</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+						<ul class="footer-links">
+							<li><a href="accessibility.html">Accessibility</a></li>
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							<li><a href="terms-of-use.html">Terms of Use</a></li>
+						</ul>
+						<p>The National Collaborative Leadership Program (NCLP) | Copyright © 2019. All Rights Reserved</p>
+						<ul class="social-icons">
+							<li><a href="https://twitter.com/nclpOman" target="_blank" class="ti-twitter"></a></li>
+							<li><a href="https://www.linkedin.com/company/nclpoman/" target="_blank" class="ti-linkedin"></a></li>
+							<li><a href="mailto:support@nclp.om" class="ti-email"></a></li>
+						</ul>
+					</div>
+					<a href="#content" class="scroll-to ti-angle-up"></a>
+				</div>
+			</footer>
 
 		</div>
 
