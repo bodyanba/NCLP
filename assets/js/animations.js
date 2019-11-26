@@ -1,4 +1,4 @@
-// if ( document.getElementById('patternLines')) {
+if ( document.getElementById('patternLines')) {
 	var anim;
 	var animData = {
 			container: document.getElementById('patternLines'),
@@ -6,15 +6,15 @@
 			loop: true,
 			autoplay: true,
 			rendererSettings: {
-					progressiveLoad: false
+				progressiveLoad: false
 			},
 			path:'../json/nclp_lines.json'
 	};
 	anim = bodymovin.loadAnimation(animData);
 	anim.setSpeed(1);
-// };
+};
 
-// if (document.getElementById('patternWhite')) {
+if (document.getElementById('patternWhite')) {
 	var anim;
 	var animData = {
 			container: document.getElementById('patternWhite'),
@@ -22,15 +22,15 @@
 			loop: true,
 			autoplay: true,
 			rendererSettings: {
-					progressiveLoad: false
+				progressiveLoad: false
 			},
 			path:'../json/nclp_pattern_white.json'
 	};
 	anim = bodymovin.loadAnimation(animData);
 	anim.setSpeed(0.5);
-// };
+};
 
-// if(document.getElementById('sphereWhite')) {
+if(document.getElementById('sphereWhite')) {
 	var anim;
 	var animData = {
 			container: document.getElementById('sphereWhite'),
@@ -38,10 +38,10 @@
 			loop: true,
 			autoplay: true,
 			rendererSettings: {
-					progressiveLoad: false
+				progressiveLoad: false
 			},
 			path:'../json/nclp_sphere_white.json'
 	};
 	anim = bodymovin.loadAnimation(animData);
 	anim.setSpeed(0.5);
-// };
+};

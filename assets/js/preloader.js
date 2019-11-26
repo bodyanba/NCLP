@@ -5,7 +5,7 @@ var animData = {
 	loop: true,
 	autoplay: true,
 	rendererSettings: {
-			progressiveLoad: false
+		progressiveLoad: false
 	},
 	path: '../json/preloader.json'
 };
