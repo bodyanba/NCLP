@@ -728,6 +728,7 @@ a {
 .section-7 {
   color: #fff;
   text-align: center;
+  overflow: hidden;
   background-color: #000066; }
   @media (min-width: 768px) {
     .section-7 {
