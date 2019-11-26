@@ -605,6 +605,11 @@ a
 				padding-top: 100%
 				overflow: hidden
 				position: relative
+				img 
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
 				.text
 					position: absolute
 					top: 0
@@ -629,32 +634,46 @@ a
 				background-color: #6da6d4
 			&.bg-3
 				background-color: #8ebade
+			.overlay
+				background-color: rgba(74, 150, 210, 0.6)
 		&.mod-2 .calendar-item
 			background-color: #bcbdc0
+			.overlay
+				background-color: rgba(188, 189, 192, 0.8)
 		&.mod-3 .calendar-item
 			background-color: #7a2c4c
 			&.bg-2
 				background-color: #9a486a
 			&.bg-3
 				background-color: #c77396
+			.overlay
+				background-color: rgba(122, 44, 76, 0.8)
 		&.mod-4 .calendar-item
 			background-color: #921632
 			&.bg-2
 				background-color: #bf3857
 			&.bg-3
 				background-color: #ef6987
+			.overlay
+				background-color: rgba(170, 44, 66, 0.7)
 		&.mod-5 .calendar-item
 			background-color: #5b2c52
+			.overlay
+				background-color: rgba(91, 44, 82, 0.8)
 		&.mod-6 .calendar-item
 			background-color: #1b5d9f
 			&.bg-2
 				background-color: #487eb5
+			.overlay
+				background-color: rgba(37, 100, 163, 0.8)
 		&.mod-7 .calendar-item
 			background-color: #58595b
 			&.bg-2
 				background-color: #797a7c
 			&.bg-3
 				background-color: #9b9b9d
+			.overlay
+				background-color: rgba(88, 89, 91, 0.8)
 
 .section-6
 	padding-top: 120px

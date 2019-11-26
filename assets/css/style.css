@@ -646,6 +646,11 @@ a {
         padding-top: 100%;
         overflow: hidden;
         position: relative; }
+        .section-5 .row [class*="col"] .calendar-item img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%; }
         .section-5 .row [class*="col"] .calendar-item .text {
           position: absolute;
           top: 0;
@@ -672,32 +677,46 @@ a {
         background-color: #6da6d4; }
       .section-5 .row.mod-1 .calendar-item.bg-3 {
         background-color: #8ebade; }
+      .section-5 .row.mod-1 .calendar-item .overlay {
+        background-color: rgba(74, 150, 210, 0.6); }
     .section-5 .row.mod-2 .calendar-item {
       background-color: #bcbdc0; }
+      .section-5 .row.mod-2 .calendar-item .overlay {
+        background-color: rgba(188, 189, 192, 0.8); }
     .section-5 .row.mod-3 .calendar-item {
       background-color: #7a2c4c; }
       .section-5 .row.mod-3 .calendar-item.bg-2 {
         background-color: #9a486a; }
       .section-5 .row.mod-3 .calendar-item.bg-3 {
         background-color: #c77396; }
+      .section-5 .row.mod-3 .calendar-item .overlay {
+        background-color: rgba(122, 44, 76, 0.8); }
     .section-5 .row.mod-4 .calendar-item {
       background-color: #921632; }
       .section-5 .row.mod-4 .calendar-item.bg-2 {
         background-color: #bf3857; }
       .section-5 .row.mod-4 .calendar-item.bg-3 {
         background-color: #ef6987; }
+      .section-5 .row.mod-4 .calendar-item .overlay {
+        background-color: rgba(170, 44, 66, 0.7); }
     .section-5 .row.mod-5 .calendar-item {
       background-color: #5b2c52; }
+      .section-5 .row.mod-5 .calendar-item .overlay {
+        background-color: rgba(91, 44, 82, 0.8); }
     .section-5 .row.mod-6 .calendar-item {
       background-color: #1b5d9f; }
       .section-5 .row.mod-6 .calendar-item.bg-2 {
         background-color: #487eb5; }
+      .section-5 .row.mod-6 .calendar-item .overlay {
+        background-color: rgba(37, 100, 163, 0.8); }
     .section-5 .row.mod-7 .calendar-item {
       background-color: #58595b; }
       .section-5 .row.mod-7 .calendar-item.bg-2 {
         background-color: #797a7c; }
       .section-5 .row.mod-7 .calendar-item.bg-3 {
         background-color: #9b9b9d; }
+      .section-5 .row.mod-7 .calendar-item .overlay {
+        background-color: rgba(88, 89, 91, 0.8); }
 
 .section-6 {
   padding-top: 120px;
