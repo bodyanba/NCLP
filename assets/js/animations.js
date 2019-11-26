@@ -8,7 +8,7 @@
 			rendererSettings: {
 					progressiveLoad: false
 			},
-			path:'https://nclp.om/json/nclp_lines.json'
+			path:'../json/nclp_lines.json'
 	};
 	anim = bodymovin.loadAnimation(animData);
 	anim.setSpeed(1);
@@ -24,7 +24,7 @@
 			rendererSettings: {
 					progressiveLoad: false
 			},
-			path:'https://nclp.om/json/nclp_pattern_white.json'
+			path:'../json/nclp_pattern_white.json'
 	};
 	anim = bodymovin.loadAnimation(animData);
 	anim.setSpeed(0.5);
@@ -40,7 +40,7 @@
 			rendererSettings: {
 					progressiveLoad: false
 			},
-			path:'https://nclp.om/json/nclp_sphere_white.json'
+			path:'../json/nclp_sphere_white.json'
 	};
 	anim = bodymovin.loadAnimation(animData);
 	anim.setSpeed(0.5);
