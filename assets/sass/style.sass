@@ -801,16 +801,16 @@ a
 .list-icons
 	list-style: none 
 	padding-left: 0
-	li 
-		padding: 0 0 10px 22px
-		position: relative
-		&:before
-			content: ''
-			position: absolute
-			top: 10px
-			left: 0
-			border: 4px solid $color-danger
-			transform: rotate(45deg)
+	>	li 
+			padding: 0 0 10px 22px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 10px
+				left: 0
+				border: 4px solid $color-danger
+				transform: rotate(45deg)
 
 .objective
 	padding-bottom: 1.5rem
@@ -1228,6 +1228,20 @@ a
 // 		opacity: .95
 
 
+.nav-5 
+	.nav-link 
+		&:nth-child(1)
+			background-color: $color-primary-4
+			&:after
+				background-color: $color-primary-4
+		&:nth-child(2)
+			background-color: $color-primary-5
+			&:after
+				background-color: $color-primary-5
+		&:nth-child(3)
+			background-color: $color-primary-6
+			&:after
+				background-color: $color-primary-6
 
 
 

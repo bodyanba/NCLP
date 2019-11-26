@@ -846,10 +846,10 @@ a {
 .list-icons {
   list-style: none;
   padding-left: 0; }
-  .list-icons li {
+  .list-icons > li {
     padding: 0 0 10px 22px;
     position: relative; }
-    .list-icons li:before {
+    .list-icons > li:before {
       content: "";
       position: absolute;
       top: 10px;
@@ -1244,5 +1244,18 @@ a {
             transform: rotate(45deg); }
     .accordion .item [data-parent*="accordion"] {
       padding-bottom: 1px; }
+
+.nav-5 .nav-link:nth-child(1) {
+  background-color: #3333cc; }
+  .nav-5 .nav-link:nth-child(1):after {
+    background-color: #3333cc; }
+.nav-5 .nav-link:nth-child(2) {
+  background-color: #3366ff; }
+  .nav-5 .nav-link:nth-child(2):after {
+    background-color: #3366ff; }
+.nav-5 .nav-link:nth-child(3) {
+  background-color: #3399ff; }
+  .nav-5 .nav-link:nth-child(3):after {
+    background-color: #3399ff; }
 
 /*# sourceMappingURL=style.css.map */

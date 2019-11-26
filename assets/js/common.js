@@ -69,4 +69,12 @@ $(document).ready(function () {
 		//alert('YES, done!');
 	});
 
+	$('.modal').on('show.bs.modal', function (e) {
+	var src = 'https://www.youtube.com/embed/frhzBU41U8I';
+	$(this).find("iframe").attr('src', src);
+	});
+	$('.modal').on('hide.bs.modal', function (e) {
+	$(this).find("iframe").removeAttr('src');
+	});
+
 });
