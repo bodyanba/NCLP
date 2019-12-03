@@ -101,6 +101,9 @@ img {
 
 ul, ol {
   padding-left: 20px; }
+  [dir="rtl"] ul, [dir="rtl"] ol {
+    padding-left: 0;
+    padding-right: 20px; }
 
 a {
   color: #4896d1;
@@ -678,6 +681,8 @@ a {
           top: 0;
           left: 0;
           width: 100%; }
+          [dir="rtl"] .section-5 .row [class*="col"] .calendar-item img {
+            transform: rotateY(-180deg); }
         .section-5 .row [class*="col"] .calendar-item .text {
           position: absolute;
           top: 0;
@@ -905,11 +910,16 @@ a {
 
 .list-icons {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   text-align: left; }
+  [dir="rtl"] .list-icons {
+    text-align: right;
+    padding-right: 0; }
   .list-icons > li {
     padding: 0 0 10px 22px;
     position: relative; }
+    [dir="rtl"] .list-icons > li {
+      padding: 0 22px 10px 0; }
     .list-icons > li:before {
       content: "";
       position: absolute;
@@ -917,6 +927,9 @@ a {
       left: 0;
       border: 4px solid #e72732;
       transform: rotate(45deg); }
+      [dir="rtl"] .list-icons > li:before {
+        left: auto;
+        right: 0; }
 
 .objective {
   padding-bottom: 1.5rem; }
@@ -928,7 +941,7 @@ a {
     color: #fff;
     font-size: 50px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 64px;
     width: 64px;
     height: 64px;
     display: inline-block;
@@ -938,8 +951,14 @@ a {
     transform: rotate(45deg);
     transition: 0.3s; }
     .objective .objective-icon div {
-      margin-left: 15px;
-      transform: rotate(-45deg); }
+      transform: rotate(-45deg);
+      position: relative;
+      left: 10px;
+      top: -10px; }
+      [dir="rtl"] .objective .objective-icon div {
+        left: auto;
+        right: 10px;
+        top: 10px; }
   .objective:hover .objective-icon {
     background: #e72732; }
 
@@ -1150,6 +1169,8 @@ a {
     .nav-2 li:nth-child(n+4) a:before {
       top: 102%;
       left: 102%;
+      bottom: auto;
+      right: auto;
       transform: rotate(180deg); }
     .nav-2 li:nth-child(n+4) a > span .tab-name {
       bottom: auto;
@@ -1323,6 +1344,9 @@ a {
       font-weight: 600; }
       .accordion .item a[data-toggle="collapse"] span {
         margin-right: auto; }
+        [dir="rtl"] .accordion .item a[data-toggle="collapse"] span {
+          margin-left: auto;
+          margin-right: 0; }
       .accordion .item a[data-toggle="collapse"] i {
         flex: 0 0 auto;
         font-size: 10px;
@@ -1335,6 +1359,9 @@ a {
         background-color: #d5d6d7;
         transition: 0.3s;
         transform: rotate(45deg); }
+        [dir="rtl"] .accordion .item a[data-toggle="collapse"] i {
+          margin-right: 1rem;
+          margin-left: 0; }
         .accordion .item a[data-toggle="collapse"] i:before {
           display: inline-block;
           transition: 0.3s; }
@@ -1354,6 +1381,8 @@ a {
 .accordion-2 {
   margin-top: 36px;
   text-align: left; }
+  [dir="rtl"] .accordion-2 {
+    text-align: right; }
   .accordion-2 .item:nth-child(1) a[data-toggle="collapse"] {
     background-color: #003399; }
   .accordion-2 .item:nth-child(2) a[data-toggle="collapse"] {
@@ -1456,6 +1485,8 @@ a {
 [dir="rtl"] .mr-1 {
   margin-right: 0 !important;
   margin-left: 0.25rem !important; }
+[dir="rtl"] .nav {
+  padding-right: 0; }
 [dir="rtl"] .navbar-nav {
   padding-right: 0; }
 [dir="rtl"] .navbar-brand {

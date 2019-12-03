@@ -65,6 +65,9 @@ img
 
 ul, ol 
 	padding-left: 20px
+	[dir="rtl"] &
+		padding-left: 0
+		padding-right: 20px
 
 a 
 	color: $color-info
@@ -638,6 +641,8 @@ a
 					top: 0
 					left: 0
 					width: 100%
+					[dir="rtl"] &
+						transform: rotateY(-180deg)
 				.text
 					position: absolute
 					top: 0
@@ -861,11 +866,16 @@ a
 			
 .list-icons
 	list-style: none 
-	padding-left: 0
+	padding: 0
 	text-align: left
+	[dir="rtl"] &
+		text-align: right
+		padding-right: 0
 	>	li 
 		padding: 0 0 10px 22px
 		position: relative
+		[dir="rtl"] &
+			padding: 0 22px 10px 0
 		&:before
 			content: ''
 			position: absolute
@@ -873,6 +883,9 @@ a
 			left: 0
 			border: 4px solid $color-danger
 			transform: rotate(45deg)
+			[dir="rtl"] &
+				left: auto
+				right: 0
 
 .objective
 	padding-bottom: 1.5rem
@@ -883,7 +896,7 @@ a
 		color: #fff
 		font-size: 50px
 		font-weight: 600
-		line-height: 50px
+		line-height: 64px
 		width: 64px
 		height: 64px
 		display: inline-block
@@ -892,9 +905,15 @@ a
 		overflow: hidden
 		transform: rotate(45deg)
 		transition: $transition
-		div 
-			margin-left: 15px
+		div
 			transform: rotate(-45deg)
+			position: relative
+			left: 10px
+			top: -10px
+			[dir="rtl"] &
+				left: auto
+				right: 10px
+				top: 10px
 	&:hover
 		.objective-icon 
 			background: $color-danger
@@ -1106,6 +1125,8 @@ a
 				&:before
 					top: 102%
 					left: 102%
+					bottom: auto
+					right: auto
 					transform: rotate(180deg)
 				> span 
 					.tab-name
@@ -1281,6 +1302,9 @@ a
 			font-weight: 600
 			span 
 				margin-right: auto
+				[dir="rtl"] &
+					margin-left: auto
+					margin-right: 0
 			i
 				flex: 0 0 auto
 				font-size: 10px
@@ -1293,6 +1317,9 @@ a
 				background-color: $color-gray-2
 				transition: $transition
 				transform: rotate(45deg)
+				[dir="rtl"] &
+					margin-right: 1rem
+					margin-left: 0
 				&:before
 					display: inline-block
 					transition: $transition
@@ -1312,6 +1339,8 @@ a
 .accordion-2
 	margin-top: 36px
 	text-align: left
+	[dir="rtl"] &
+		text-align: right
 	.item
 		&:nth-child(1)
 			a[data-toggle="collapse"]
@@ -1419,6 +1448,8 @@ a
 	.mr-1
 		margin-right: 0 !important
 		margin-left: .25rem !important
+	.nav 
+		padding-right: 0
 	.navbar-nav
 		padding-right: 0
 	.navbar-brand 
@@ -1434,6 +1465,7 @@ a
 		.offset-md-8
 			margin-left: 0
 			margin-right: 66.666667%
+
 
 
 
