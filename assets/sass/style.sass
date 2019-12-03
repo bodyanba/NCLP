@@ -205,6 +205,8 @@ a
 			text-align: right
 			margin-top: 6px
 			min-width: auto
+			[dir="rtl"] &
+				text-align: left
 	@media (min-width: 992px)
 		&:not(.navbar-bg)
 			color: #fff
@@ -233,12 +235,20 @@ a
 			opacity: .8
 		&.ti-world
 			font-size: 18px
+			[dir="rtl"] &
+				&:before 
+					display: none
+				&:after 
+					content: '\e665'
 			> * 
 				vertical-align: middle
 			i 
 				font-size: 8px
 				font-weight: 600
 				margin-left: 10px
+				[dir="rtl"] &
+					margin-left: 0
+					margin-right: 10px
 		&.nav-link
 			font-size: 13px
 			letter-spacing: 1px
@@ -255,8 +265,14 @@ a
 				width: 0
 				border-bottom: 1px solid $color-danger
 				transition: $transition
+				[dir="rtl"] &
+					right: 10px
+					left: auto
 				@media (max-width: 991.98px)
 					left: 0
+					[dir="rtl"] &
+						right: 0
+						left: auto
 			&:hover, &.active
 				&:after
 					width: 20px
@@ -303,12 +319,17 @@ a
 			padding: 54px 15px
 			background-color: $color-gray
 			transition: $transition
+			[dir="rtl"] &
+				left: -260px
+				right: auto
 
 @media (max-width: 991.98px)
 	.menubar-in
 		overflow: hidden
 		.fixed-top
 			transform: translateX(-260px)
+			[dir="rtl"] & 
+				transform: translateX(260px)
 
 .navbar-toggler
 	display: inline-block
@@ -331,7 +352,6 @@ a
 		margin-top: 6px
 	span, &:before, &:after
 		display: block
-		margin-left: auto
 		transition: $transition
 		transform-origin: right center
 		border-top: 2px solid
@@ -339,16 +359,24 @@ a
 		animation-timing-function: linear
 		animation-iteration-count: infinite
 		animation-duration: 3s
+		[dir="rtl"] &
+			margin-left: 0
+			margin-right: auto
+			transform-origin: left center
 	&.active
 		&:before
 			transform: rotate(-45deg)
 			width: 23px
+			[dir="rtl"] &
+				transform: rotate(45deg)
 		span
 			width: 0
 			opacity: 0
 		&:after
 			transform: rotate(45deg)
 			width: 23px
+			[dir="rtl"] &
+				transform: rotate(-45deg)
 		span, &:before, &:after
 			animation-name: none !important
 @keyframes sandwich-1
@@ -427,7 +455,7 @@ a
 		opacity: .5
 	ul 
 		list-style: none
-		padding-left: 0
+		padding: 0
 		li 
 			display: inline-block
 		&.footer-links
@@ -704,6 +732,8 @@ a
 	@media (min-width: 768px)
 		transform: rotate(-45deg)
 		margin: -20% 0
+		[dir="rtl"] &
+			transform: rotate(45deg)
 	.form-row
 		> [class*="col"]
 			padding-top: 5px
@@ -717,10 +747,14 @@ a
 		@media (max-width: 767.98px)
 			transform: rotate(-45deg)
 			margin: 20% 0
+			[dir="rtl"] & 
+				transform: rotate(45deg)
 		img
 			width: 100%
 			transform: rotate(45deg) scale(1.45)
 			transition: $transition
+			[dir="rtl"] &
+				transform: rotate(-45deg) scale(1.45)
 		span
 			position: absolute
 			top: 50%
@@ -729,6 +763,8 @@ a
 			text-shadow: 0 0 4px #000
 			transform: translateY(-50%) rotate(45deg)
 			transition: $transition
+			[dir="rtl"] &
+				transform: translateY(-50%) rotate(-45deg)
 		i
 			position: absolute
 			top: 50%
@@ -750,6 +786,8 @@ a
 				opacity: .2
 				filter: grayscale(100%)
 				transform: rotate(45deg) scale(1.55)
+				[dir="rtl"] &
+					transform: rotate(-45deg) scale(1.55)
 			span 
 				opacity: 0
 			i 
@@ -1049,7 +1087,7 @@ a
 					left: 50%
 					transform: translate(-50%, -50%)
 					transition: $transition 
-			&:hover, &.active
+			&:hover
 				background-color: $color-danger
 				&:before 
 					border-color: $color-danger
@@ -1062,10 +1100,6 @@ a
 						bottom: calc(100% + 50px)
 					img
 						height: 40px
-						opacity: 1
-			&.active
-				> span
-					.tab-name
 						opacity: 1
 		&:nth-child(n+4)
 			a
@@ -1206,6 +1240,35 @@ a
 	50% 
 		transform: translateY(5px)
 
+.nav-5 
+	counter-reset: heading
+	justify-content: center
+	margin-top: 2rem
+	a
+		color: #fff
+		width: 35px
+		height: 35px
+		line-height: 35px
+		transform: rotate(45deg)
+		margin: 0 8px
+		&:nth-child(1)
+			background-color: $color-primary
+		&:nth-child(2)
+			background-color: $color-primary-3
+		&:nth-child(3)
+			background-color: $color-primary-5
+		&:nth-child(4)
+			background-color: $color-primary-2
+		&:nth-child(5)
+			background-color: $color-primary-4
+		&:before
+			display: block
+			counter-increment: heading
+			content: ''counter(heading)
+			transform: rotate(-45deg)
+		&:hover 
+			opacity: .8
+
 .accordion
 	margin-top: 36px
 	.item
@@ -1306,6 +1369,9 @@ a
 	top: 250px
 	right: -400px
 	width: 800px
+	[dir="rtl"] & 
+		right: auto
+		left: -400px
 
 #anim-white
 	position: absolute
@@ -1313,6 +1379,9 @@ a
 	left: -420px
 	height: 600px
 	opacity: .1
+	[dir="rtl"] & 
+		right: -420px
+		left: auto
 
 #anim-sphere
 	position: absolute
@@ -1320,6 +1389,9 @@ a
 	left: -700px
 	height: 700px
 	opacity: .3
+	[dir="rtl"] & 
+		right: -700px
+		left: auto
 
 #anim-header
 	position: absolute
@@ -1328,6 +1400,41 @@ a
 	bottom: 0
 	opacity: .5
 	direction: rtl
+	[dir="rtl"] & 
+		right: auto
+		left: 0
+		direction: ltr
 	svg 
 		width: auto !important
+
+[dir="rtl"]
+	body 
+		text-align: right
+	.text-left 
+		text-align: right !important
+	.text-right 
+		text-align: left !important
+	.mr-1
+		margin-right: 0 !important
+		margin-left: .25rem !important
+	.navbar-nav
+		padding-right: 0
+	.navbar-brand 
+		margin-right: 0
+		margin-left: 1rem
+	.dropdown-menu-right
+		right: auto
+		left: 0
+	@media (min-width: 768px)
+		.offset-md-4 
+			margin-left: 0
+			margin-right: 33.333333%
+		.offset-md-8
+			margin-left: 0
+			margin-right: 66.666667%
+
+
+
+
+
 
