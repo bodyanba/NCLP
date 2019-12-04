@@ -77,4 +77,18 @@ $(document).ready(function () {
 		$(this).find("iframe").removeAttr('src');
 	});
 
+	$('.owl-1').owlCarousel({
+    margin: 15,
+    nav: false,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+    }
+	});
+
 });

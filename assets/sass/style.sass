@@ -743,11 +743,8 @@ a
 		> [class*="col"]
 			padding-top: 5px
 			padding-bottom: 5px
-	a
+	.member
 		color: #fff
-		display: block
-		position: relative
-		overflow: hidden
 		background: linear-gradient(135deg, $color-primary 30%, $color-danger 100%)
 		@media (max-width: 767.98px)
 			transform: rotate(-45deg)
@@ -770,22 +767,6 @@ a
 			transition: $transition
 			[dir="rtl"] &
 				transform: translateY(-50%) rotate(-45deg)
-		i
-			position: absolute
-			top: 50%
-			left: 50%
-			width: 100px
-			height: 100px
-			background-color: $color-danger
-			opacity: 0
-			transform: translate(-50%, -50%)
-			transition: $transition
-			&:before
-				font-size: 40px
-				line-height: 100px
-				display: block
-				transform: rotate(45deg)
-				transition: $transition
 		&:hover 
 			img 
 				opacity: .2
@@ -795,13 +776,105 @@ a
 					transform: rotate(-45deg) scale(1.55)
 			span 
 				opacity: 0
-			i 
-				width: 50px
-				height: 50px
-				opacity: 1
-				&:before
-					font-size: 20px
-					line-height: 50px
+
+.member
+	display: block
+	position: relative
+	overflow: hidden
+	.ti-plus
+		color: #fff
+		text-align: center
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 100px
+		height: 100px
+		background-color: $color-danger
+		opacity: 0
+		transform: translate(-50%, -50%)
+		transition: $transition
+		&:before
+			font-size: 40px
+			line-height: 100px
+			display: block
+			transform: rotate(45deg)
+			transition: $transition
+	&:hover
+		.ti-plus 
+			width: 50px
+			height: 50px
+			opacity: 1
+			&:before
+				font-size: 20px
+				line-height: 50px
+
+.blog
+	background: #fff
+	.blog-img
+		position: relative
+		background: $color-body
+		img
+			transition: $transition
+		.ti-plus
+			transform: translate(-50%, -50%) rotate(45deg)
+	.blog-info 
+		padding: 20px 25px
+		color: $color-body
+		.date
+			font-size: 14px
+			color: #ccc
+			opacity: 1
+			transition: $transition
+			display: inline-block
+		.more
+			font-size: 14px
+			color: $color-danger
+			opacity: 0
+			transition: $transition
+			display: inline-block
+	.ti-arrow-right 
+		[dir="rtl"] &
+			display: inline-block
+			transform: rotate(180deg)
+	&:hover
+		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
+	&:hover .blog-img img
+		opacity: .33
+		transform: scale(1.1, 1.1)
+		filter: grayscale(100%)
+	&:hover .blog-info div:first-child
+		color: $color-danger
+	&:hover span
+		&.date
+			opacity: 0
+			transform: translateX(-110%)
+			[dir="rtl"] &
+				transform: translateX(110%)
+		&.more
+			opacity: 1
+			transform: translateX(-110%)
+			[dir="rtl"] &
+				transform: translateX(110%)
+
+.owl-1
+	.owl-dot 
+		span
+			border: 2px solid $color-danger 
+			background: $color-danger !important
+		&:hover 
+			span
+				background: none !important
+		&.active 
+			span 
+				background: none !important
+				transform: scale(1.3)
+
+.twitter 
+	background: #fff
+	padding: 15px
+	transition: $transition
+	&:hover 
+		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
 
 .service
 	color: #fff

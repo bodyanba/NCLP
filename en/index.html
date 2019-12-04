@@ -11,6 +11,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="../assets/css/style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bodymovin@4.13.0/build/player/bodymovin.min.js"></script>
@@ -125,7 +127,7 @@
 					</div>
 				</section>
 
-				<section class="section section-4">
+				<section class="section section-4 bg-gray">
 					<div class="container pt-3">
 						<h2 class="o-hidden">
 							<div data-aos="fade-up">Our <span class="text-danger">Partners</span></div>
@@ -177,13 +179,13 @@
 					</div>
 				</section>
 
-				<section class="section bg-gray">
+				<section class="section">
 					<div class="container">
 						<div class="row justify-content-center" data-aos="fade-in">
 							<div class="col-9 col-sm-6 col-md-9 members">
 								<div class="form-row">
 									<div class="col-md-4">
-										<a href="about.html">
+										<a href="about.html" class="member">
 											<img src="../assets/img/about.jpg" alt="">
 											<span>About</span>
 											<i class="ti-plus"></i>
@@ -192,14 +194,14 @@
 								</div>
 								<div class="form-row"> 
 									<div class="col-md-4">
-										<a href="calendar.html">
+										<a href="calendar.html" class="member">
 											<img src="../assets/img/calendar.jpg" alt="">
 											<span>Calendar</span>
 											<i class="ti-plus"></i>
 										</a>
 									</div>
 									<div class="col-md-4">
-										<a href="program.html">
+										<a href="program.html" class="member">
 											<img src="../assets/img/program.jpg" alt="">
 											<span>Program</span>
 											<i class="ti-plus"></i>
@@ -208,14 +210,14 @@
 								</div>
 								<div class="form-row">
 									<div class="col-md-4 offset-md-4">
-										<a href="community.html">
+										<a href="community.html" class="member">
 											<img src="../assets/img/com.jpg" alt="">
 											<span>Community</span>
 											<i class="ti-plus"></i>
 										</a>
 									</div>
 									<div class="col-md-4">
-										<a href="admission.html">
+										<a href="admission.html" class="member">
 											<img src="../assets/img/admission.jpg" alt="">
 											<span>Admission</span>
 											<i class="ti-plus"></i>
@@ -224,12 +226,71 @@
 								</div>
 								<div class="form-row">
 									<div class="col-md-4 offset-md-8">
-										<a href="faq.html">
+										<a href="faq.html" class="member">
 											<img src="../assets/img/faq.jpg" alt="">
 											<span>FAQ</span>
 											<i class="ti-plus"></i>
 										</a>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section bg-gray">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="owl-1 owl-carousel owl-theme">
+									<div class="item">
+										<a href="#!" class="blog member">
+											<div class="blog-img o-hidden">
+												<img src="../assets/img/post1.jpg" alt="">
+												<i class="ti-plus"></i>
+											</div>
+											<div class="blog-info fz-20">
+												<div class="mb-2 font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+												<p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+												<span class="date">April 23, 2019</span>
+												<span class="more">Read More <i class="ti-arrow-right"></i></span>
+											</div>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#!" class="blog member">
+											<div class="blog-img o-hidden">
+												<img src="../assets/img/post2.jpg" alt="">
+												<i class="ti-plus"></i>
+											</div>
+											<div class="blog-info fz-20">
+												<div class="mb-2 font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+												<p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+												<span class="date">April 23, 2019</span>
+												<span class="more">Read More <i class="ti-arrow-right"></i></span>
+											</div>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#!" class="blog member">
+											<div class="blog-img o-hidden">
+												<img src="../assets/img/post3.jpg" alt="">
+												<i class="ti-plus"></i>
+											</div>
+											<div class="blog-info fz-20">
+												<div class="mb-2 font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+												<p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+												<span class="date">April 23, 2019</span>
+												<span class="more">Read More <i class="ti-arrow-right"></i></span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="twitter">
+									<a class="twitter-timeline" data-height="420" data-link-color="#dc786c" data-chrome="nofooter noborders noscrollbar noheader transparent" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a>
+									<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								</div>
 							</div>
 						</div>
@@ -353,6 +414,7 @@
 		<script src="https://unpkg.com/jarallax@1.10/dist/jarallax-video.min.js"></script>
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.downCount/1.0.0/jquery.downCount.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 		<script src="../assets/libs/enllax.js-master/jquery.enllax.min.js"></script>
 		<script src="../assets/js/common.js"></script>
 		<script src="../assets/js/animations.js"></script>
