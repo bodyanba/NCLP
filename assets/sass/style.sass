@@ -192,6 +192,27 @@ a
 			color: $color-danger
 			background-color: $color-gray
 
+.owl-theme
+	.owl-dots
+		.owl-dot 
+			span
+				border: 1px solid $color-danger 
+				background: $color-danger !important
+				transition: $transition
+			&:hover 
+				span
+					background: none !important
+			&.active 
+				span 
+					background: none !important
+					transform: scale(1.3)
+	&.owl-1
+		.owl-dots
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+
 .fixed-top
 	transition: transform $transition, margin-top $transition
 	.navbar 
@@ -284,7 +305,7 @@ a
 				pointer-events: none
 	.navbar-nav
 		padding-bottom: .5rem
-		@media (min-width: 992px)
+		@media (min-width: 1200px)
 			padding-bottom: 0
 			padding-right: 10px
 	&.navbar-bg
@@ -298,19 +319,7 @@ a
 				opacity: 0
 				&.logo-color
 					opacity: 1
-	@media (max-width: 991.98px)
-		.navbar-top
-			background-color: $color-gray
-		.navbar-bottom
-			background-color: #fff
-			border-bottom-color: $color-gray
-		.navbar-brand
-			img 
-				opacity: 0
-				&.logo-color
-					opacity: 1
-		.scroll-down &
-			margin-top: -31px
+	@media (max-width: 1199.98px)
 		#navbar
 			position: fixed
 			width: 260px
@@ -325,8 +334,21 @@ a
 			[dir="rtl"] &
 				left: -260px
 				right: auto
+	@media (max-width: 991.98px)
+		.navbar-top
+			background-color: $color-gray
+		.navbar-bottom
+			background-color: #fff
+			border-bottom-color: $color-gray
+		.navbar-brand
+			img 
+				opacity: 0
+				&.logo-color
+					opacity: 1
+		.scroll-down &
+			margin-top: -31px
 
-@media (max-width: 991.98px)
+@media (max-width: 1199.98px)
 	.menubar-in
 		overflow: hidden
 		.fixed-top
@@ -606,6 +628,7 @@ a
 
 .section-4
 	text-align: center
+	background-color: $color-gray
 	img 
 		max-width: 150px 
 		max-height: 50px
@@ -746,6 +769,8 @@ a
 	.member
 		color: #fff
 		background: linear-gradient(135deg, $color-primary 30%, $color-danger 100%)
+		[dir="rtl"] & 
+			background: linear-gradient(-135deg, $color-primary 30%, $color-danger 100%)
 		@media (max-width: 767.98px)
 			transform: rotate(-45deg)
 			margin: 20% 0
@@ -808,73 +833,82 @@ a
 				font-size: 20px
 				line-height: 50px
 
+.date
+	font-size: 14px
+	color: $color-gray-2
+
 .blog
 	background: #fff
+	margin: 0 15px 15px
 	.blog-img
+		overflow: hidden
 		position: relative
-		background: $color-body
+		background-color: $color-body
 		img
 			transition: $transition
 		.ti-plus
 			transform: translate(-50%, -50%) rotate(45deg)
 	.blog-info 
-		padding: 20px 25px
+		padding: 20px 25px 40px
 		color: $color-body
-		.date
-			font-size: 14px
-			color: #ccc
-			opacity: 1
+		h5 
+			text-transform: inherit
 			transition: $transition
-			display: inline-block
-		.more
+		span
 			font-size: 14px
-			color: $color-danger
-			opacity: 0
+			display: inline-block
 			transition: $transition
-			display: inline-block
-	.ti-arrow-right 
-		[dir="rtl"] &
-			display: inline-block
-			transform: rotate(180deg)
+			position: absolute
+			bottom: 20px
+			&.date
+				left: 25px
+				[dir="rtl"] &
+					left: auto
+					right: 25px
+			&.more
+				color: $color-danger
+				opacity: 0
+				left: 65px
+				[dir="rtl"] &
+					left: auto
+					right: 65px
+				.ti-arrow-right 
+					display: inline-block
+					vertical-align: middle
+					[dir="rtl"] &
+						transform: rotate(180deg)
 	&:hover
 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
-	&:hover .blog-img img
-		opacity: .33
-		transform: scale(1.1, 1.1)
-		filter: grayscale(100%)
-	&:hover .blog-info div:first-child
-		color: $color-danger
-	&:hover span
-		&.date
-			opacity: 0
-			transform: translateX(-110%)
-			[dir="rtl"] &
-				transform: translateX(110%)
-		&.more
-			opacity: 1
-			transform: translateX(-110%)
-			[dir="rtl"] &
-				transform: translateX(110%)
-
-.owl-1
-	.owl-dot 
+		.blog-img 
+			img
+				opacity: .33
+				transform: scale(1.1)
+				filter: grayscale(100%)
+		.blog-info 
+			h5
+				color: $color-danger
 		span
-			border: 2px solid $color-danger 
-			background: $color-danger !important
-		&:hover 
-			span
-				background: none !important
-		&.active 
-			span 
-				background: none !important
-				transform: scale(1.3)
+			&.date
+				opacity: 0
+				left: -20px
+				[dir="rtl"] &
+					right: -20px
+			&.more
+				opacity: 1
+				left: 25px
+				[dir="rtl"] &
+					right: 25px
 
 .twitter 
 	background: #fff
 	padding: 15px
 	transition: $transition
+	height: calc(100% - 15px)
 	&:hover 
 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
+	iframe 
+		height: 100% !important
+		min-height: 350px !important
 
 .service
 	color: #fff
@@ -1465,6 +1499,20 @@ a
 .modal-content
 	border: 0
 	border-radius: 0
+
+.bread
+	padding: 0
+	font-size: 1rem
+	list-style: none
+	margin-bottom: 0
+	text-align: center
+	> li 
+		display: inline-block
+		+ li:before 
+			content: '|'
+			margin: 0 7px 0 3px
+			[dir="rtl"] & 
+				margin: 0 3px 0 7px
 
 #anim-lines
 	position: absolute

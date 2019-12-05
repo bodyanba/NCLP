@@ -77,18 +77,39 @@ $(document).ready(function () {
 		$(this).find("iframe").removeAttr('src');
 	});
 
+	var dir = false;
+	if ( $("html").attr("dir") == "rtl" ) {
+		dir = true;
+	};
+
 	$('.owl-1').owlCarousel({
-    margin: 15,
+		rtl: dir,
+    items: 1,
     nav: false,
     dots: true,
+    autoplay: true,
+    autoHeight: true,
+	  smartSpeed: 1000,
+	});
+
+	$('.owl-2').owlCarousel({
+		rtl: dir,
     responsive: {
-      0: {
-        items: 1
-      },
-      576: {
-        items: 2
-      },
-    }
+    	0: {
+    		items: 1,
+    	},
+    	768: {
+    		items: 2,
+    	},
+    	1200: {
+    		items: 3,
+    	},
+    },
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoHeight: true,
+	  smartSpeed: 1000,
 	});
 
 });
