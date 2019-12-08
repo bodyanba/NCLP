@@ -1571,7 +1571,8 @@ a {
   top: 100px;
   left: -700px;
   height: 700px;
-  opacity: 0.3; }
+  opacity: 0.3;
+  z-index: 1; }
   [dir="rtl"] #anim-sphere {
     right: -700px;
     left: auto; }
