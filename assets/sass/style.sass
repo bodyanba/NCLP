@@ -470,12 +470,24 @@ a
 	position: relative
 	letter-spacing: 1px
 	text-transform: uppercase
-	background-color: $color-primary
+	background-color: $color-danger
+	> .container 
+		position: relative
 	@media (min-width: 768px)
 		position: fixed
 		bottom: 0
 		left: 0
 		right: 0
+	&:before 
+		content: ''
+		position: absolute
+		left: -80%
+		right: -80%
+		top: 50%
+		transform: translateY(-50%)
+		padding-top: 260%
+		background: linear-gradient(135deg, $color-primary 44%, transparent 65%)
+		animation: background 10s linear infinite
 	p 
 		opacity: .5
 	ul 
@@ -569,16 +581,6 @@ a
 	text-align: center
 	overflow: hidden
 	background-color: $color-danger
-	&:before 
-		content: ''
-		position: absolute
-		left: -80%
-		right: -80%
-		top: 50%
-		transform: translateY(-50%)
-		padding-top: 260%
-		background: linear-gradient(135deg, $color-primary 44%, transparent 65%)
-		animation: background 10s linear infinite
 	.countdown
 		font-size: 30px
 		margin: 40px 0 1rem

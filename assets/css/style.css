@@ -507,13 +507,25 @@ a {
   position: relative;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background-color: #000066; }
+  background-color: #e72732; }
+  .page-footer > .container {
+    position: relative; }
   @media (min-width: 768px) {
     .page-footer {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0; } }
+  .page-footer:before {
+    content: "";
+    position: absolute;
+    left: -80%;
+    right: -80%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 260%;
+    background: linear-gradient(135deg, #000066 44%, transparent 65%);
+    animation: background 10s linear infinite; }
   .page-footer p {
     opacity: 0.5; }
   .page-footer ul {
@@ -603,16 +615,6 @@ a {
   text-align: center;
   overflow: hidden;
   background-color: #e72732; }
-  .section-1:before {
-    content: "";
-    position: absolute;
-    left: -80%;
-    right: -80%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-top: 260%;
-    background: linear-gradient(135deg, #000066 44%, transparent 65%);
-    animation: background 10s linear infinite; }
   .section-1 .countdown {
     font-size: 30px;
     margin: 40px 0 1rem;
