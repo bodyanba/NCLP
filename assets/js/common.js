@@ -112,4 +112,14 @@ $(document).ready(function () {
 	  smartSpeed: 1000,
 	});
 
+	$('.nav-5').on('click', 'a', function () {
+		$('.nav-2').find('a').removeClass('active');
+		$('.nav-2').find('a[href="' + $(this).attr('href') + '"]').addClass('active');
+	});
+
+	$('.nav-2').on('click', 'a', function () {
+		$('.nav-5').find('a').removeClass('active');
+		$('.nav-5').find('a[href="' + $(this).attr('href') + '"]').addClass('active');
+	});
+
 });

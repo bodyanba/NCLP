@@ -1252,17 +1252,17 @@ a {
           left: 50%;
           transform: translate(-50%, -50%);
           transition: 0.3s; }
-      .nav-2 li a:hover {
+      .nav-2 li a:hover, .nav-2 li a.active {
         background-color: #e72732; }
-        .nav-2 li a:hover:before {
+        .nav-2 li a:hover:before, .nav-2 li a.active:before {
           border-color: #e72732;
           bottom: 100%;
           right: 100%; }
-        .nav-2 li a:hover > span:before {
+        .nav-2 li a:hover > span:before, .nav-2 li a.active > span:before {
           opacity: 0; }
-        .nav-2 li a:hover > span .tab-name {
+        .nav-2 li a:hover > span .tab-name, .nav-2 li a.active > span .tab-name {
           bottom: calc(100% + 50px); }
-        .nav-2 li a:hover > span img {
+        .nav-2 li a:hover > span img, .nav-2 li a.active > span img {
           height: 40px;
           opacity: 1; }
     .nav-2 li:nth-child(n+4) a:before {
@@ -1274,10 +1274,10 @@ a {
     .nav-2 li:nth-child(n+4) a > span .tab-name {
       bottom: auto;
       top: calc(100% + 60px); }
-    .nav-2 li:nth-child(n+4) a:hover:before {
+    .nav-2 li:nth-child(n+4) a:hover:before, .nav-2 li:nth-child(n+4) a.active:before {
       top: 100%;
       left: 100%; }
-    .nav-2 li:nth-child(n+4) a:hover > span .tab-name {
+    .nav-2 li:nth-child(n+4) a:hover > span .tab-name, .nav-2 li:nth-child(n+4) a.active > span .tab-name {
       top: calc(100% + 50px); }
 
 .nav-3 {
@@ -1430,6 +1430,8 @@ a {
       transform: rotate(-45deg); }
     .nav-5 a:hover {
       opacity: 0.8; }
+    .nav-5 a.active {
+      background-color: #e72732; }
 
 .accordion {
   margin-top: 36px; }
