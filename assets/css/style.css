@@ -1575,6 +1575,22 @@ a {
     right: -700px;
     left: auto; }
 
+#anim-header {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  direction: rtl; }
+  #anim-header svg {
+    width: auto !important; }
+  [dir="rtl"] #anim-header {
+    right: auto;
+    left: 0;
+    direction: ltr; }
+    [dir="rtl"] #anim-header svg {
+      transform: rotateY(180deg); }
+
 [dir="rtl"] body {
   text-align: right; }
 [dir="rtl"] .text-left {
