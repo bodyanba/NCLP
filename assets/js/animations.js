@@ -1,6 +1,6 @@
 if ( document.getElementById('anim-lines')) {
-	var anim;
-	var animData = {
+	var anim1;
+	var animData1 = {
 			container: document.getElementById('anim-lines'),
 			renderer: 'svg',
 			loop: true,
@@ -10,13 +10,13 @@ if ( document.getElementById('anim-lines')) {
 			},
 			path:'../json/anim-lines.json'
 	};
-	anim = bodymovin.loadAnimation(animData);
-	anim.setSpeed(1);
+	anim1 = bodymovin.loadAnimation(animData1);
+	anim1.setSpeed(1);
 };
 
 if (document.getElementById('anim-white')) {
-	var anim;
-	var animData = {
+	var anim2;
+	var animData2 = {
 			container: document.getElementById('anim-white'),
 			renderer: 'svg',
 			loop: true,
@@ -26,13 +26,13 @@ if (document.getElementById('anim-white')) {
 			},
 			path:'../json/anim-white.json'
 	};
-	anim = bodymovin.loadAnimation(animData);
-	anim.setSpeed(0.5);
+	anim2 = bodymovin.loadAnimation(animData2);
+	anim2.setSpeed(0.5);
 };
 
 if(document.getElementById('anim-sphere')) {
-	var anim;
-	var animData = {
+	var anim3;
+	var animData3 = {
 			container: document.getElementById('anim-sphere'),
 			renderer: 'svg',
 			loop: true,
@@ -42,13 +42,13 @@ if(document.getElementById('anim-sphere')) {
 			},
 			path:'../json/anim-sphere.json'
 	};
-	anim = bodymovin.loadAnimation(animData);
-	anim.setSpeed(0.5);
+	anim3 = bodymovin.loadAnimation(animData3);
+	anim3.setSpeed(0.5);
 };
 
 if(document.getElementById('anim-header')) {
-	var anim;
-	var animData = {
+	var anim4;
+	var animData4 = {
 			container: document.getElementById('anim-header'),
 			renderer: 'svg',
 			loop: true,
@@ -58,6 +58,6 @@ if(document.getElementById('anim-header')) {
 			},
 			path:'../json/anim-header.json'
 	};
-	anim = bodymovin.loadAnimation(animData);
-	anim.setSpeed(1);
+	anim4 = bodymovin.loadAnimation(animData4);
+	anim4.setSpeed(1);
 };
